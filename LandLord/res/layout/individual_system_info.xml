@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout android:orientation="horizontal"
+        android:padding="6dp" android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView android:text="时间" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textColor="#FFFFFF"
+            android:singleLine="true" android:layout_weight="1" />
+        <TextView android:text="信息" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textColor="#FFFFFF"
+            android:singleLine="true" android:layout_weight="2" />
+    </LinearLayout>
+    <ProgressBar 
+        android:id="@+id/proBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        />
+    <ListView android:id="@+id/list_systeminfo"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:padding="3dp" android:cacheColorHint="@android:color/transparent"
+        android:clickable="false" android:divider="@android:color/transparent" 
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+        />
+</LinearLayout>

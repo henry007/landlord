@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp" android:layout_height="280dp">
+    <RelativeLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_bg">
+        <LinearLayout android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical"
+        	android:paddingTop="10dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_centerInParent="true">
+	        <TextView android:id="@+id/tv_detail_match_info_title"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:text="火爆赛事"
+	        	android:textSize="20sp"
+	        	android:textColor="@color/common_color"/>
+	        
+	        <TextView android:id="@+id/tv_detail_match_info_fenge"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_marginTop="-10dp"
+	        	android:text="--------------------------"
+	        	android:textSize="20sp"
+	        	android:textColor="@android:color/white"/>
+	        
+	        <ScrollView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	        	android:layout_marginTop="-8dp"
+	            android:scrollbars="none"
+	            >
+		        <TextView 
+		            android:id="@+id/tv_detail_match_info"
+		            android:text="@string/help"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@android:color/white"
+		            android:textSize="15sp"
+		            />
+	        </ScrollView>
+        </LinearLayout>
+        <Button 
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="4dp" 
+            android:background="@drawable/shape_back" />
+
+    </RelativeLayout>
+</RelativeLayout>

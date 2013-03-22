@@ -1,0 +1,11 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/b1_anger1"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/b1_anger2"
+        android:duration="100"/>
+
+</animation-list>

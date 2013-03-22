@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:padding="5dp">
+	<LinearLayout android:id="@+id/linear_up"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:background="@drawable/transparent_frame"
+			android:layout_weight="1" android:layout_marginRight="5dp"
+			android:padding="1dp" android:gravity="center">
+			<TextView android:id="@+id/tv_tips" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:gravity="center"
+				android:text="您目前拥有：" android:textColor="@android:color/white" />
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_below="@id/tv_tips"
+				android:orientation="horizontal" android:gravity="center">
+				<ImageView android:id="@+id/iv_icon_money"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:src="@drawable/icon_money" />
+				<TextView android:id="@+id/tv_gold" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+
+			</LinearLayout>
+
+		</RelativeLayout>
+		<ImageButton android:id="@+id/gv_pay_button"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/achieve_gold" />
+	</LinearLayout>
+	<GridView android:id="@+id/gv_payment" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:layout_below="@+id/linear_up"
+		android:layout_weight="1"
+		android:numColumns="2" android:layout_marginTop="5dp" />
+		<!-- 
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/tips_unsurppot"
+		android:textColor="@android:color/white"
+		android:layout_centerInParent="true" />
+		 -->
+</RelativeLayout>

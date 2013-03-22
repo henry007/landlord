@@ -1,0 +1,192 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+div.main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:800px;
+    height:480px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:800px;
+    height:480px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:232px;
+    width:796px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u0 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:800px;
+    height:480px
+}
+
+.u2 {
+    position:absolute;
+    left:370px;
+    top:10px;
+    width:100px;
+    height:40px
+}
+
+.u3 {
+    position:absolute;
+    left:480px;
+    top:10px;
+    width:100px;
+    height:40px
+}
+
+.u4 {
+    position:absolute;
+    left:590px;
+    top:10px;
+    width:100px;
+    height:40px
+}
+
+.u5 {
+    position:absolute;
+    left:230px;
+    top:320px;
+    width:60px;
+    height:50px
+}
+
+.u6 {
+    position:absolute;
+    left:300px;
+    top:390px;
+    width:60px;
+    height:50px
+}
+
+.u7 {
+    position:absolute;
+    left:260px;
+    top:10px;
+    width:90px;
+    height:40px
+}
+
+.u8 {
+    position:absolute;
+    left:650px;
+    top:360px;
+    width:80px;
+    height:90px
+}
+
+.u9 {
+    position:absolute;
+    left:700px;
+    top:270px;
+    width:60px;
+    height:50px
+}
+
+.u10_original {
+    background-image: url('../物品_files/u10_original.png');
+}
+
+.u10_container {
+    position:absolute;
+    left:390px;
+    top:155px;
+    width:60px;
+    height:25px;
+}
+
+#u10_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:66px;
+    height:31px;
+}
+
+.u11 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:56px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10 {
+    position:absolute;
+    left:390px;
+    top:155px;
+    width:60px;
+    height:25px
+}
+
+.u12 {
+    position:absolute;
+    left:358px;
+    top:118px;
+    width:50px;
+    height:50px
+}
+
+.u13 {
+    position:absolute;
+    left:470px;
+    top:120px;
+    width:50px;
+    height:50px
+}
+
+.u14 {
+    position:absolute;
+    left:580px;
+    top:120px;
+    width:50px;
+    height:50px
+}
+

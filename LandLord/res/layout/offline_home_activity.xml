@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<RelativeLayout android:id="@+id/root_layout1" 
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+	    <ImageButton android:id="@+id/ibtn_beauty_one"
+	        android:layout_width="@dimen/imagebutton_offline_beaty_width" android:layout_height="@dimen/imagebutton_offline_beaty_height"
+	        android:layout_marginLeft="30dp" android:layout_marginTop="@dimen/imagebutton_offline_back_margin_top"
+	        android:scaleType="centerInside" />
+	
+	    <ImageButton android:id="@+id/ibtn_beauty_two"
+	        android:layout_width="@dimen/imagebutton_offline_beaty_width" android:layout_height="@dimen/imagebutton_offline_beaty_height"
+	        android:layout_alignTop="@id/ibtn_beauty_one"
+	        android:layout_toRightOf="@id/ibtn_beauty_one"
+	        android:scaleType="centerInside" />
+	
+	    <ImageButton android:id="@+id/ibtn_beauty_three"
+	        android:layout_width="@dimen/imagebutton_offline_beaty_width" android:layout_height="@dimen/imagebutton_offline_beaty_height"
+	        android:layout_alignTop="@id/ibtn_beauty_one"
+	        android:layout_toRightOf="@id/ibtn_beauty_two"
+	        android:scaleType="centerInside" />
+	
+	    <ImageButton android:id="@+id/ibtn_beauty_fourth"
+	        android:layout_width="@dimen/imagebutton_offline_beaty_width" android:layout_height="@dimen/imagebutton_offline_beaty_height"
+	        android:layout_alignTop="@id/ibtn_beauty_one"
+	        android:layout_toRightOf="@id/ibtn_beauty_three"
+	        android:scaleType="centerInside" />
+		
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="56dp"
+			android:layout_alignParentBottom="true"
+			android:orientation="horizontal"
+			android:layout_marginLeft="48dp"
+			android:layout_marginRight="50dp">
+			
+		    <ImageButton android:id="@+id/ibtn_start"
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/bg_ibtn_start" />
+		
+		    <ImageButton android:id="@+id/ibtn_possession"
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="12dp"
+		        android:background="@drawable/bg_ibtn_possession" />
+		
+		    <ImageButton android:id="@+id/ibtn_top"
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="14dp"
+		        android:background="@drawable/bg_ibtn_top" />
+		
+		    <ImageButton android:id="@+id/ibtn_back"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="9dp"
+		        android:background="@drawable/bg_ibtn_back"/>
+		</LinearLayout>
+	     <!-- android:layout_marginLeft="170dip" android:layout_marginTop="255dip" 
+	            android:layout_toRightOf="@id/ibtn_top" -->
+        <com.hurray.landlord.view.SoundPanel
+            android:id="@+id/sound_panel"
+            android:layout_width="wrap_content" android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

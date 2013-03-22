@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <dimen name="multipletextview_width">50dp</dimen>
+   <dimen name="bottompointsview_width">90dp</dimen>
+   <dimen name="multipletextview_marginright">20dp</dimen>
+   <dimen name="multipletextview_margintop">10dp</dimen>
+   <dimen name="mycardview_width">100dp</dimen>
+   <dimen name="mycardview_height">80dp</dimen>
+   <dimen name="multipletextsize">10sp</dimen>
+   <dimen name="threecardmarginleft">120dp</dimen>
+   <dimen name="threecardmargintop">0dp</dimen>
+</resources>

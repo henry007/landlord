@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    >
+    <!-- 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/light_online_game" />
+         -->
+    <Button
+        android:id="@+id/btn_online_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_btn_online_apply" />
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical" >
+        <ListView
+            android:id="@+id/online_game_list"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:cacheColorHint="@null"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="2dp"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+             android:descendantFocusability="blocksDescendants"
+             />
+        <TextView
+            android:id="@+id/online_player_num"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/common_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+</RelativeLayout>

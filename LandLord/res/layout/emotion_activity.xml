@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/emotion_layout"
+        android:layout_width="240dp"
+        android:layout_height="160dp"
+        android:background="@drawable/shape_bg"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"  >
+
+        <GridView
+            android:id="@+id/faces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnWidth="5dp"
+            android:numColumns="3" />
+    </LinearLayout>
+<!-- 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/emotion_layout"
+        android:layout_alignTop="@id/emotion_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/bg_flower_top_left" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/emotion_layout"
+        android:layout_alignRight="@id/emotion_layout"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/bg_flower_bottom_right" />
+ -->
+
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="200dp"
+    android:layout_gravity="center" 
+    android:background="@drawable/shape_bg"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+
+    <TextView android:id="@+id/tips_incompelete_payment2"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+         android:gravity="center"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="40dp"
+        android:text="@string/tips_confirm_purchase" android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+
+        <Button android:id="@+id/btn_ok" 
+        	android:layout_width="110dp"
+            android:layout_height="50dp" 
+            android:background="@drawable/net_btn"
+            android:text="@string/ok" android:textColor="@android:color/white"
+            android:layout_below="@id/tips_incompelete_payment2"
+       	 	android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+             />
+
+</RelativeLayout>

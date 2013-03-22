@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:components="http://schemas.android.com/apk/res/com.hurray.landlord"
+    android:id="@android:id/tabhost" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout android:id="@+id/online_home_layout"
+        android:layout_width="fill_parent" android:layout_height="fill_parent">
+        
+        <AbsoluteLayout android:id="@+id/online_home_lv_bg"
+        	android:layout_width="180dp" 
+        	android:layout_height="80dp">
+        	
+        	<ImageView 
+	            style="@android:style/Widget.ProgressBar.Horizontal"
+        		android:layout_width="160dp"
+        		android:layout_height="36dp"
+        		android:layout_x="6dp"
+        		android:layout_y="34dp"
+        		android:background="@drawable/online_game_list_item_normal"/>
+        	
+        	<ImageView android:layout_width="24dp" 
+	            android:layout_height="29dp"
+	            android:layout_x="20dp"
+        		android:layout_y="20dp"
+        		android:background="@drawable/icon_level"/>
+        		
+       		<LinearLayout android:layout_width="24dp" 
+		            android:layout_height="38dp"
+		            android:layout_x="44dp"
+	        		android:layout_y="17dp">
+            	<ImageView android:id="@+id/iv_level_ten"
+		            android:layout_width="12dp" 
+		            android:layout_height="fill_parent"
+		            android:visibility="gone"/>
+		        <ImageView android:id="@+id/iv_level_bit"
+		            android:layout_width="wrap_content" 
+		            android:layout_height="fill_parent"/>
+            </LinearLayout>
+	        
+	        <TextView android:id="@+id/tv_online_name"
+	            android:text="游客1231" 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" 
+	            android:layout_x="70dp"
+        		android:layout_y="17dp"
+	            android:textSize="14dp"
+	            android:textColor="@android:color/white" />
+        	
+	        <com.hurray.landlord.view.TextProgressBar
+	            android:id="@+id/progressBar_exp" 
+	            style="@android:style/Widget.ProgressBar.Horizontal"
+	            android:layout_width="82dp"
+	            android:layout_height="10dp" 
+	            android:layout_x="68dp"
+        		android:layout_y="39dp"
+	            android:progressDrawable="@drawable/progressbar_exp"
+	            components:textColor="@android:color/white"
+	            components:textSize="10dp" />
+	        <TextView android:id="@+id/tv_user_gold"
+	            android:layout_width="wrap_content" 
+	            android:layout_height="15dp"
+	            android:layout_x="68dp"
+        		android:layout_y="51dp"
+	            android:drawableLeft="@drawable/icon_money" android:text="500"
+	            android:textSize="13dp" android:layout_below="@id/progressBar_exp"
+	            android:layout_alignRight="@id/progressBar_exp"
+	            android:textColor="@android:color/white" android:singleLine="true" />
+	        
+	    </AbsoluteLayout>
+        
+        <com.hurray.landlord.view.OnlineAvatar
+            android:id="@+id/home_net_avatar" android:layout_width="235dp"
+            android:layout_height="291.4dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="-32dp"
+            android:layout_marginLeft="-30dp" android:focusable="false" />
+        <Button android:id="@+id/btn_selfinfo"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" android:layout_below="@id/online_home_lv_bg"
+            android:background="@drawable/btn_selfinfo" />
+        <ImageView android:id="@+id/btn_online_regist"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" android:layout_below="@id/btn_selfinfo"
+            android:background="@anim/regist_frame" />
+        <Button android:id="@+id/btn_pay"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" 
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_pay" />
+        <LinearLayout android:id="@+id/ll_tab"
+            android:layout_width="315dp" android:layout_height="323dp"
+            android:layout_marginRight="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" android:orientation="vertical">
+            <TabWidget android:id="@android:id/tabs"
+                android:layout_width="306dp" android:layout_height="56dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal" android:paddingLeft="1dp" 
+                />
+            <FrameLayout android:id="@android:id/tabcontent"
+                android:layout_width="315dp" android:layout_height="0dp"
+                 android:layout_marginTop="-20dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <Button android:id="@+id/btn_online_back"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="98dp"
+            android:layout_marginRight="22dp" android:background="@drawable/bg_btn_online_back" />
+        <ImageView android:id="@+id/btn_treasure"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ll_tab"
+            android:layout_alignLeft="@id/ll_tab"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp" android:background="@anim/treasure_frame" />
+        <ImageView android:id="@+id/btn_award"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ll_tab"
+            android:layout_alignLeft="@id/ll_tab"
+            android:layout_marginBottom="38dp"
+            android:layout_marginLeft="-19dp" android:background="@anim/award_frame" />
+    </RelativeLayout>
+</TabHost>

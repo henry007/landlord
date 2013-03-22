@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  >
+  
+    <ImageView 
+        android:id="@+id/img_goods"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:background="@drawable/white_corner"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_centerHorizontal="true"
+        />
+    <LinearLayout 
+        android:id="@+id/orange_bg"
+        android:layout_width="68dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@id/img_goods"
+        android:background="@drawable/orange_corner"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView 
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:text="asdfas"
+            android:gravity="center"
+            android:textColor="@color/common_color"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            />
+        <TextView 
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="asdf"
+               android:textColor="@color/common_color"
+               android:layout_weight="1"
+            />        
+    </LinearLayout>
+    
+</RelativeLayout>

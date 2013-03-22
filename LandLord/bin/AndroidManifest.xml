@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.hurray.landlord" android:installLocation="auto"
+	android:versionCode="1211" android:versionName="1.2.11">
+	<!-- 注意：服务器只支持 3个版本号， 大版本号、中版本号变化表示强制更新，小版本号表示建议更新 -->
+	<uses-sdk android:minSdkVersion="6" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_LOGS" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.SET_DEBUG_APP" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	<uses-permission android:name="android.permission.SEND_SMS" />
+	<uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+	<application android:name=".App" android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+		<activity android:name=".activities.Logo1Activity"
+			android:configChanges="orientation|keyboardHidden|navigation"
+			android:label="@string/app_name" android:launchMode="standard"
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+			
+		</activity>
+		<activity android:name=".activities.StartActivity"
+			android:configChanges="orientation|keyboardHidden|navigation"
+			android:label="@string/app_name" android:launchMode="standard"
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+		</activity>
+		<activity android:name=".activities.AfterWinActivity"
+			android:configChanges="orientation|keyboardHidden|navigation"
+			android:label="@string/app_name" android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+		<activity android:name=".activities.AfterFailActivity"
+			android:configChanges="orientation|keyboardHidden|navigation"
+			android:label="@string/app_name" android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+		<activity android:name=".activities.OnlineGameActivity"
+			android:configChanges="orientation|keyboardHidden|navigation"
+			android:label="@string/app_name" android:launchMode="standard"
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+		<activity android:name=".activities.OfflineGameActivity"
+			android:configChanges="orientation|keyboardHidden|navigation"
+			android:label="@string/app_name" android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+		<activity android:name=".activities.GameResultActivity"
+			android:configChanges="orientation|keyboardHidden|navigation"
+			android:label="@string/app_name" android:screenOrientation="landscape"
+			android:theme="@style/dialog" />
+		<activity android:name=".activities.EmotionActivity"
+			android:screenOrientation="landscape" android:theme="@android:style/Theme.Panel">
+		</activity>
+		<activity android:name=".activities.ChatActivity"
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+		</activity>
+		<activity android:name=".activities.OfflineHomeActivity"
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+			<!-- <intent-filter> <action android:name="android.intent.action.MAIN" 
+				/> <category android:name="android.intent.category.LAUNCHER" /> </intent-filter> -->
+		</activity>
+		<receiver android:name=".sms.SMSReceiver">
+			<intent-filter android:priority="1000">
+				<action android:name="android.provider.Telephony.SMS_RECEIVED"></action>
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</receiver>
+		<receiver android:name=".receivers.ConnectivityReceiver">
+			<intent-filter>
+				<action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+				<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+			</intent-filter>
+		</receiver>
+		<!-- 橘子渠道号 -->
+		<meta-data android:name="MARKET_ID" android:value="hurray" />
+		<meta-data android:name="CHANNEL" android:value="c0" />
+		<meta-data android:name="UMENG_APPKEY" android:value="4f976ff55270153146000061" />
+		<meta-data android:name="UMENG_CHANNEL" android:value="dev0119" />
+		<meta-data android:name="RES_VER" android:value="1004" />
+		<service android:name=".services.AppUpdateService">
+		</service>
+		<service android:name=".services.PlayMusicService">
+		</service>
+		<service android:name=".server.MessageServerService">
+		</service>
+		<!-- <activity android:name=".server.MessageExampleActivity" android:icon="@drawable/ic_demo" 
+			android:label="Network Demo" > <intent-filter> <action android:name="android.intent.action.MAIN" 
+			/> <category android:name="android.intent.category.LAUNCHER" /> </intent-filter> 
+			</activity> -->
+		<!-- <activity android:name="com.hurray.landlord.test.CommonTestActivity" 
+			android:icon="@drawable/ic_demo" android:label="CommonTest" > <intent-filter> 
+			<action android:name="android.intent.action.MAIN" /> <category android:name="android.intent.category.LAUNCHER" 
+			/> </intent-filter> </activity> -->
+		<activity android:name=".activities.PossessionActivity"
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+		</activity>
+		<activity android:name=".activities.OfflineTopActivity"
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+		</activity>
+		<activity android:name=".activities.OnlineHomeActivity"
+			android:launchMode="standard" android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+		</activity>
+		<activity android:name=".activities.OnlineGameListActivity"
+			android:launchMode="singleInstance" android:screenOrientation="landscape">
+		</activity>
+		<activity android:name=".activities.OnlineGoodsActivity"
+			android:launchMode="singleInstance" android:screenOrientation="landscape">
+		</activity>
+		<activity android:name=".activities.OnlineStoreActivity"
+			android:launchMode="singleInstance" android:screenOrientation="landscape">
+		</activity>
+		<activity android:name=".activities.OnlineTopActivity"
+			android:launchMode="singleInstance" android:screenOrientation="landscape">
+		</activity>
+		<activity android:name=".activities.OnlinePersonalActivity"
+			android:launchMode="singleInstance" android:screenOrientation="landscape">
+		</activity>
+		<activity android:name=".test.TestRegisterActivity"
+			android:icon="@drawable/ic_demo" android:label="TestRegister"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity android:name=".activities.OnlineRegisterActivity"
+			android:configChanges="orientation|keyboardHidden"
+			android:launchMode="standard" android:screenOrientation="landscape"
+			android:theme="@style/dialog" android:windowSoftInputMode="stateHidden|adjustPan">
+		</activity>
+		<activity android:name=".activities.OnlineSelfInfoActivity"
+			android:configChanges="orientation|keyboardHidden"
+			android:screenOrientation="landscape" android:theme="@android:style/Theme.Panel"
+			android:windowSoftInputMode="stateHidden|adjustPan">
+		</activity>
+		<activity android:name=".activities.OnlineLoginActivity"
+			android:screenOrientation="landscape" android:theme="@android:style/Theme.Panel">
+		</activity>
+		<activity android:name=".activities.OnlineMotifyPsdActivity"
+			android:screenOrientation="landscape" android:theme="@android:style/Theme.Panel">
+		</activity>
+		<activity android:name=".activities.OnlineBindingPhoneActivity"
+			android:screenOrientation="landscape" android:theme="@android:style/Theme.Panel">
+		</activity>
+		<activity android:name=".activities.OnlineAwardActivity"
+			android:launchMode="standard" android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.Panel">
+		</activity>
+		<activity android:name=".activities.OnlineIndividualActivity"
+			android:launchMode="standard" android:screenOrientation="landscape"
+			android:theme="@style/dialog">
+		</activity>
+		<activity android:name=".activities.TabActorInfoActivity"
+			android:launchMode="singleInstance" android:screenOrientation="landscape" />
+		<activity android:name=".activities.TabPersonalAchieveActivity"
+			android:launchMode="singleInstance" android:screenOrientation="landscape" />
+		<activity android:name=".activities.TabSystemInfoActivity"
+			android:launchMode="singleInstance" android:screenOrientation="landscape" />
+		<activity android:name=".activities.TabMobileBindActivity"
+			android:launchMode="singleInstance" android:screenOrientation="landscape" />
+		<activity android:name=".activities.TabPsdGetBackActivity"
+			android:launchMode="singleInstance" android:screenOrientation="landscape" />
+		<activity android:name=".activities.TabPsdModifyActivity"
+			android:launchMode="singleInstance" android:screenOrientation="landscape" />
+		<activity android:name=".activities.TabUserChangedActivity"
+			android:launchMode="singleInstance" android:screenOrientation="landscape" />
+		<activity android:name=".activities.TabPaymentActivity"
+			android:launchMode="singleInstance" android:screenOrientation="landscape" />
+		<activity android:name=".activities.PopPersonInfoActivity"
+			android:screenOrientation="landscape" android:theme="@android:style/Theme.Panel" />
+		<activity android:name=".activities.OnlineGetRewardActivity"
+			android:screenOrientation="landscape" android:theme="@style/dialog" />
+		<activity android:name=".activities.CongratulationActivity"
+			android:screenOrientation="landscape" android:theme="@style/dialog" />
+		<activity android:name=".activities.MyTurnTableSurfaceViewActivity"
+			android:screenOrientation="landscape" android:theme="@style/dialog">
+		</activity>
+		<activity android:name=".activities.OnlinePrizeActivity"
+			android:launchMode="standard" android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.Panel">
+		</activity>
+		<activity android:name=".activities.OnlineRisedWaitActivity"
+			android:theme="@style/dialog" android:screenOrientation="landscape">
+		</activity>
+		<activity android:name=".activities.OnlineGameResultRankActivity"
+			android:theme="@style/dialog" android:screenOrientation="landscape">
+		</activity>
+		<activity android:name=".activities.TabPaymentDetailActivity"
+			android:theme="@style/dialog" android:screenOrientation="landscape">
+		</activity>
+		<activity android:name=".activities.OnlineNoticeActivity"
+			android:theme="@style/dialog" android:screenOrientation="landscape">
+		</activity>
+
+
+		<!--加入appid -->
+		<meta-data android:name="JUZI_APPID"
+			android:value="50727a20-adf0-41f3-ba8a-5daa7250b239" />
+		<!-- 物品墙 -->
+		<activity android:name="com.juzi.main.TheAdVirtualGoods"
+			android:screenOrientation="portrait">
+		</activity>
+		<!--下载管理 -->
+		<activity android:name="com.juzi.main.DownLing"
+			android:screenOrientation="portrait">
+		</activity>
+		<!--浏览器 -->
+		<activity android:name="com.juzi.main.WebActivity"
+			android:configChanges="keyboardHidden|orientation" android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			android:screenOrientation="landscape">
+		</activity>
+	</application>
+</manifest>

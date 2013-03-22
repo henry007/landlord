@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:layout_gravity="center" 
+    android:background="@drawable/shape_bg"
+    android:padding="30dp">
+
+    <TextView android:id="@+id/tv_wait_people" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" 
+        android:layout_marginTop="30dp"
+        android:gravity="center" 
+        android:text="@string/incompelete_payment"
+        android:textColor="@android:color/white" 
+        android:textSize="18sp" />
+    <Button android:id="@+id/btn_ok"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_wait_people"
+        android:background="@drawable/net_btn" 
+        android:text="@string/btn_cancel_sign_in"
+        android:textColor="@android:color/white" 
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

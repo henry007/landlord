@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/transparent_frame"
+    android:padding="5dp"
+    >
+
+    <ImageView android:id="@+id/icon_gold_flag"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:src="@drawable/icon_money" />
+    <TextView android:id="@+id/tv_gold_content"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon_gold_flag"
+        android:textColor="@android:color/white" 
+        android:textSize="10dp"/>
+    <TextView android:id="@+id/tv_gold_discount"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_gold_content"
+        android:textColor="@android:color/widget_edittext_dark"/>
+    <com.hurray.landlord.view.DashedLine android:id="@+id/dashed_line"
+        android:layout_below="@id/icon_gold_flag" android:layout_width="wrap_content"
+        android:layout_height="7dp" />
+    <TextView 
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_below="@id/dashed_line"
+        android:text="" android:textColor="@android:color/white" />
+
+</RelativeLayout>

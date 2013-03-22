@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+  
+    <LinearLayout
+        android:id="@+id/ll_btn_top"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal" >
+        <!-- 
+        <Button
+            android:id="@+id/btn_top_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_rank"
+             />
+        <Button
+            android:id="@+id/btn_top_wealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_wealth"
+            />
+         -->
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_btn_top"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+         <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" android:layout_weight="1"
+            android:text="排名" android:textColor="@color/common_color"
+            android:gravity="center_horizontal"
+            android:textStyle="italic" />
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:text="玩家" android:textColor="@color/common_color"
+            android:gravity="center_horizontal"
+            android:textStyle="italic" />
+        <TextView android:id="@+id/iv_level_or_wealth"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="等级"
+            android:gravity="center_horizontal"
+            android:textColor="@color/common_color" android:textStyle="italic" />
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/iv_online_top_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ll_title"
+        android:scaleType="fitXY"
+        android:src="@drawable/light_online_game" />
+      
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="240dp"
+        android:layout_height="160dp"
+        android:layout_below="@id/ll_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" >
+        <ListView
+            android:id="@+id/lv_online_top"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@null"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="2dp"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" />
+           <!--  android:background="@drawable/bg_tab_purple" -->
+        <ProgressBar
+            android:id="@+id/progess_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+       <ImageView
+        android:id="@+id/iv_online_bottom_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/frame_layout"
+        android:scaleType="fitXY"
+        android:src="@drawable/light_online_game" />
+    <Button
+        android:id="@+id/btn_online_look_over"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_btn_online_look_over" />
+</RelativeLayout>

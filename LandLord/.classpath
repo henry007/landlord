@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="lib" path="libs/Analytics_Android_SDK_3.3.jar"/>
+	<classpathentry kind="lib" path="libs/commons-io.jar"/>
+	<classpathentry kind="lib" path="libs/commons-lang.jar"/>
+	<classpathentry kind="lib" path="libs/protocol.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/JuZiSDK2.1.5.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

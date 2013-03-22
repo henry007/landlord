@@ -1,0 +1,164 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+div.main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:800px;
+    height:480px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:800px;
+    height:480px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:232px;
+    width:796px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u0 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:800px;
+    height:480px
+}
+
+.u2_original {
+    background-image: url('../奖励页面_files/u2_original.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:240px;
+    top:110px;
+    width:320px;
+    height:200px;
+}
+
+#u2_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:326px;
+    height:206px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:316px;
+    height:165px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2 {
+    position:absolute;
+    left:240px;
+    top:110px;
+    width:320px;
+    height:200px
+}
+
+.u4 {
+    position:absolute;
+    left:350px;
+    top:265px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'宋体';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u5_original {
+    background-image: url('../奖励页面_files/u5_original.png');
+}
+
+.u5_container {
+    position:absolute;
+    left:580px;
+    top:200px;
+    width:180px;
+    height:80px;
+}
+
+#u5_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:86px;
+}
+
+.u6 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:176px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u5 {
+    position:absolute;
+    left:580px;
+    top:200px;
+    width:180px;
+    height:80px
+}
+

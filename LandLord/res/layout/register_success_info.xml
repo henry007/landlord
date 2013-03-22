@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="420dp"
+    android:layout_height="200dp"
+    android:background="@drawable/shape_bg" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:text="恭喜马克思!\n你已经完成注册!\n你的用户名为：125485@kk.com\n密码为：1584688548\n请牢记您的用户名和密码，如果密\n码丢失可以通过邮件的方式找回"
+        android:textColor="@android:color/white"
+    	android:textSize="15sp" 
+        android:gravity="center"
+        />
+    <LinearLayout 
+        android:id="@+id/l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/textView1"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您获得了注册奖励：9999"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" 
+            />
+
+         <ImageView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:background="@android:color/transparent"
+             android:src="@drawable/icon_money"
+             />
+        
+    </LinearLayout>
+    
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/l1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/net_btn" 
+        android:text="确定"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <com.hurray.landlord.view.OnlineGameBgView
+        android:id="@+id/game_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <ImageView
+        android:id="@+id/game_table"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY" />
+    <com.hurray.landlord.view.OnlineAvatar
+        android:id="@+id/left_avatar"
+        android:layout_width="165dp"
+        android:layout_height="204.6dp"
+        android:layout_above="@id/game_table"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="-23dp"
+        android:layout_marginLeft="60dp" />
+    <com.hurray.landlord.view.OnlineAvatar
+        android:id="@+id/right_avatar"
+        android:layout_width="165dp"
+        android:layout_height="204.6dp"
+        android:layout_above="@id/game_table"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="-23dp"
+        android:layout_marginRight="60dp" />
+    <LinearLayout
+        android:id="@+id/online_game_top_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+        <com.hurray.landlord.view.OnlineGameTopView
+            android:id="@+id/online_game_top_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+             />
+        <com.hurray.landlord.view.SoundPanel
+            android:layout_width="wrap_content"
+            android:layout_height="55dp" 
+            />
+    </LinearLayout>
+    <com.hurray.landlord.view.ShowCardsView
+        android:id="@+id/left_show_cards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="105dp" />
+    <com.hurray.landlord.view.ShowCardsView
+        android:id="@+id/right_show_cards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="105dp" />
+    <com.hurray.landlord.view.SelfCardsView
+        android:id="@+id/self_cards_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+    <com.hurray.landlord.view.ShowCardsView
+        android:id="@+id/self_show_cards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/self_cards_view"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/left_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/online_game_top_layout"
+        android:layout_marginLeft="-25dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/left_avatar"
+        android:background="@drawable/left_speak_bg"
+        android:maxWidth="230dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="18dp"
+        android:paddingTop="11dp"
+        android:text="@string/buyao"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/right_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/left_text"
+        android:layout_marginRight="-25dp"
+        android:layout_toLeftOf="@id/right_avatar"
+        android:background="@drawable/right_speak_bg"
+        android:maxWidth="230dp"
+        android:paddingBottom="11dp"
+        android:paddingRight="18dp"
+        android:paddingTop="17dp"
+        android:text="@string/buyao"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+    <!-- <include layout="@layout/activity_local_game_speak" /> -->
+    <RelativeLayout
+        android:id="@+id/mybuttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/self_cards_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" >
+        <LinearLayout
+            android:id="@+id/gamebuttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone" >
+            <Button
+                android:id="@+id/chupai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/sl_game_chupai" />
+            <Button
+                android:id="@+id/tishi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/sl_game_tishi" />
+            <Button
+                android:id="@+id/buyao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/sl_game_buchu" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/declare_lord_btns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone" >
+            <Button
+                android:id="@+id/yifen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sl_game_yifen" />
+            <Button
+                android:id="@+id/erfen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/sl_game_erfen" />
+            <Button
+                android:id="@+id/sanfen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/sl_game_sanfen" />
+            <Button
+                android:id="@+id/buyaodizhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/sl_game_bujiao" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/rob_lord_btns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone" >
+            <Button
+                android:id="@+id/rob_lord_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rob_lord" />
+            <Button
+                android:id="@+id/rob_pass_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/btn_rob_pass" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/left_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/game_table"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="50dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/plus_num"
+        android:textStyle="bold"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/right_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/game_table"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="50dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/plus_num"
+        android:textStyle="bold"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/my_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/self_show_cards"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-20dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/plus_num"
+        android:textStyle="bold"
+        android:visibility="gone" />
+    <include layout="@layout/bomb_anim" />
+    <include layout="@layout/rocket_anim" />
+    <include layout="@layout/plane_anim" />
+    <ImageView
+        android:id="@+id/anim_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/online_game_top_layout"
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:id="@+id/left_lord_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/online_game_top_layout"
+        android:layout_marginTop="-20dp"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <ImageView
+            android:id="@+id/left_lord_cup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/left_lord_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/right_lord_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/online_game_top_layout"
+        android:layout_marginTop="-20dp"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <ImageView
+            android:id="@+id/right_lord_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/right_lord_cup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/self_lord_cup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/self_cards_view"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/online_game_top_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="35dp"
+        android:gravity="left" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/left_card_number"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:id="@+id/left_player_name"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/left_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/game_time_bg"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/online_game_top_layout"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="35dp"
+        android:gravity="right" >
+        <TextView
+            android:id="@+id/right_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/game_time_bg"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/right_card_number"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:id="@+id/right_player_name"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/self_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/self_cards_view"
+        android:layout_marginLeft="55dp"
+        android:background="@drawable/left_speak_bg"
+        android:maxWidth="230dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="18dp"
+        android:paddingTop="11dp"
+        android:text="@string/buyao"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/self_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/self_cards_view"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:background="@drawable/game_time_bg"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+    <ImageView
+        android:id="@+id/icon_robot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:focusable="true" />
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<resources>   
+  <color name="transparent_background">#50000000</color>   
+  <color name="plus_num">#feda02</color>
+  <color name="score_num">#fedd16</color>
+  
+  <color name="pink1">#FFCCFF</color>
+    <color name="pink2">#FFACE2</color>
+    <color name="pink3">#FF769C</color>
+    <color name="green1">#E7E59C</color>
+    <color name="green2">#B4D578</color>
+    <color name="green3">#56B937</color>
+     <color name="yellow1">#FFCCD8</color>
+    <color name="yellow2">#FFB29C</color>
+    <color name="yellow3">#FFB29C</color>
+    <color name="orange">#860a48</color>
+    <color name="game_list_bg">#741b66</color>
+     <color name="common_color">#e08ab6</color>
+ 
+</resources>   

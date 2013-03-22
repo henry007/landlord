@@ -1,0 +1,274 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+div.main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:800px;
+    height:480px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:800px;
+    height:480px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:232px;
+    width:796px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u0 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:800px;
+    height:480px
+}
+
+.u2 {
+    position:absolute;
+    left:230px;
+    top:335px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'宋体';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u3 {
+    position:absolute;
+    left:350px;
+    top:335px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'宋体';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u4 {
+    position:absolute;
+    left:470px;
+    top:335px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'宋体';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u5_original {
+    background-image: url('../出牌_files/u5_original.png');
+}
+
+.u5_container {
+    position:absolute;
+    left:250px;
+    top:210px;
+    width:50px;
+    height:50px;
+}
+
+#u5_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:50px;
+    height:50px;
+}
+
+.u6 {
+    position:absolute;
+    left:2px;
+    top:18px;
+    width:46px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u5 {
+    position:absolute;
+    left:250px;
+    top:210px;
+    width:50px;
+    height:50px
+}
+
+.u7_original {
+    background-image: url('../出牌_files/u7_original.png');
+}
+
+.u7_container {
+    position:absolute;
+    left:300px;
+    top:250px;
+    width:180px;
+    height:80px;
+}
+
+#u7_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:86px;
+}
+
+.u8 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:176px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u7 {
+    position:absolute;
+    left:300px;
+    top:250px;
+    width:180px;
+    height:80px
+}
+
+.u9_original {
+    background-image: url('../出牌_files/u9_original.png');
+}
+
+.u9_container {
+    position:absolute;
+    left:320px;
+    top:70px;
+    width:160px;
+    height:30px;
+}
+
+#u9_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:166px;
+    height:36px;
+}
+
+.u10 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:156px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u9 {
+    position:absolute;
+    left:320px;
+    top:70px;
+    width:160px;
+    height:30px
+}
+
+.u11 {
+    position:absolute;
+    left:190px;
+    top:10px;
+    width:50px;
+    height:50px
+}
+
+.u12 {
+    position:absolute;
+    left:476px;
+    top:7px;
+    width:50px;
+    height:50px
+}
+
+.u13 {
+    position:absolute;
+    left:532px;
+    top:6px;
+    width:50px;
+    height:50px
+}
+
+.u14 {
+    position:absolute;
+    left:588px;
+    top:9px;
+    width:50px;
+    height:50px
+}
+

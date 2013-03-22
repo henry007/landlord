@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:layout_gravity="center">
+	<RelativeLayout android:id="@+id/result_tab"
+		android:layout_width="400dp" android:layout_height="240dp"
+		android:background="@drawable/shape_bg" android:paddingLeft="25dp"
+		android:paddingRight="25dp" android:paddingTop="20dp">
+		<LinearLayout android:id="@+id/tab_name"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_alignParentTop="true" android:layout_marginBottom="5dp"
+			>
+			<TextView android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="姓名" 
+				android:textSize="14sp"
+	            android:textColor="#ffffff"
+	            android:gravity="center"
+	            android:textStyle="italic"/>
+	        <TextView android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="小计" 
+				android:textSize="14sp"
+	            android:textColor="#ffffff"
+	            android:gravity="center"
+	            android:textStyle="italic"/>
+	        <TextView android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="总分" 
+				android:textSize="14sp"
+	            android:textColor="#ffffff"
+	            android:gravity="center"
+	            android:textStyle="italic"/>
+		</LinearLayout>
+		<ImageView android:id="@+id/result_online_fengexian"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_below="@id/tab_name" android:layout_centerInParent="true"
+			android:layout_marginTop="5dp" android:background="@drawable/light_online_game" />
+		<LinearLayout android:id="@+id/tab_record1"
+			android:layout_width="fill_parent" android:layout_height="38dp"
+			android:layout_below="@id/result_online_fengexian"
+			android:background="@drawable/online_game_list_item_normal" android:gravity="center"
+			android:paddingBottom="10dp" android:paddingTop="10dp"
+			android:layout_marginTop="5dp">
+			<TextView android:id="@+id/record1_name"
+				android:layout_width="0dp" 
+				android:layout_height="wrap_content"
+				android:layout_weight="1" 
+				android:gravity="center" 
+				android:text="玩家"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textColor="@color/common_color" 
+				android:textSize="14sp"
+				android:textStyle="italic" />
+			<TextView android:id="@+id/record1_subtotal"
+				android:layout_width="0dp" 
+				android:layout_height="wrap_content"
+				android:layout_weight="1" 
+				android:gravity="center" 
+				android:text="subtotala"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textColor="@color/common_color" 
+				android:textSize="14sp"
+				android:textStyle="italic" />
+			<TextView android:id="@+id/record1_total"
+				android:layout_width="0dp" 
+				android:layout_height="wrap_content"
+				android:layout_weight="1" 
+				android:gravity="center" 
+				android:text="total"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textColor="@color/common_color" 
+				android:textSize="14sp"
+				android:textStyle="italic" />
+		</LinearLayout>
+		<LinearLayout android:id="@+id/tab_record2"
+			android:layout_width="fill_parent" 
+			android:layout_height="38dp"
+			android:layout_below="@id/tab_record1" 
+			android:layout_marginTop="5dp"
+			android:background="@drawable/online_game_list_item_normal" 
+			android:gravity="center"
+			android:paddingBottom="10dp" 
+			android:paddingTop="10dp">
+			<TextView android:id="@+id/record2_name"
+				android:layout_width="0dp" 
+				android:layout_height="wrap_content"
+				android:layout_weight="1" 
+				android:gravity="center" 
+				android:text="name"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textColor="@color/common_color" 
+				android:textSize="14sp"
+				android:textStyle="italic" />
+			<TextView android:id="@+id/record2_subtotal"
+				android:layout_width="0dp" android:layout_height="wrap_content"
+				android:layout_weight="1" android:gravity="center" android:text="subtotal"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textColor="@color/common_color" android:textSize="14sp"
+				android:textStyle="italic" />
+			<TextView android:id="@+id/record2_total"
+				android:layout_width="0dp" android:layout_height="wrap_content"
+				android:layout_weight="1" android:gravity="center" android:text="total"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textColor="@color/common_color" android:textSize="14sp"
+				android:textStyle="italic" />
+		</LinearLayout>
+		<LinearLayout android:id="@+id/tab_record3"
+			android:layout_width="fill_parent" android:layout_height="38dp"
+			android:layout_below="@id/tab_record2" android:layout_marginTop="5dp"
+			android:background="@drawable/online_game_list_item_normal" android:gravity="center"
+			android:paddingBottom="10dp" android:paddingTop="10dp">
+			<TextView android:id="@+id/record3_name"
+				android:layout_width="0dp" android:layout_height="wrap_content"
+				android:layout_weight="1" android:gravity="center" android:text="name"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textColor="@color/common_color" android:textSize="14sp"
+				android:textStyle="italic" />
+			<TextView android:id="@+id/record3_subtotal"
+				android:layout_width="0dp" android:layout_height="wrap_content"
+				android:layout_weight="1" android:gravity="center" android:text="subtotal"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textColor="@color/common_color" android:textSize="14sp"
+				android:textStyle="italic" />
+			<TextView android:id="@+id/record3_total"
+				android:layout_width="0dp" android:layout_height="wrap_content"
+				android:layout_weight="1" android:gravity="center" android:text="total"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textColor="@color/common_color" android:textSize="14sp"
+				android:textStyle="italic" />
+		</LinearLayout>
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_below="@id/tab_record3"
+			android:layout_marginTop="2dp" android:orientation="horizontal">
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:orientation="vertical">
+				<TextView android:id="@+id/left_game_num"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_below="@id/tab_record3" android:layout_marginTop="2dp"
+					android:gravity="center" android:text="剩余9局" android:textSize="14sp" />
+				<TextView android:id="@+id/win_win_num"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_below="@id/left_game_num" android:gravity="center"
+					android:text="连胜1局" android:textSize="14sp" />
+			</LinearLayout>
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true">
+				<Button android:layout_width="90dp" android:background="@drawable/net_btn"
+					android:textColor="#ffffff" android:layout_height="50dp"
+					android:id="@+id/btn_exit" android:text="退出" android:textSize="16dp"></Button>
+				<Button android:layout_width="90dp" android:background="@drawable/net_btn"
+					android:textColor="#ffffff" android:layout_height="50dp"
+					android:id="@+id/btn_goon" android:text="继续" android:textSize="16dp"></Button>
+			</LinearLayout>
+		</RelativeLayout>
+	</RelativeLayout>
+</RelativeLayout>

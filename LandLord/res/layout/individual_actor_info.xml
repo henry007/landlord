@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:padding="30dp">
+    <TextView  android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:textColor="#FFFFFF"
+        android:textSize="15sp" android:id="@+id/tv_user_nickname" />
+    <TextView android:text="-------------------------"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="#FFFFFF" />
+
+ <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView android:text="@string/user_id" android:layout_width="wrap_content"
+            android:layout_height="fill_parent" android:textColor="#FFFFFF" />
+        <TextView  android:layout_width="wrap_content"
+            android:layout_height="fill_parent" android:textColor="#FFFFFF"
+            android:id="@+id/tv_user_id"
+             />
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView android:text="@string/user_level" android:layout_width="wrap_content"
+            android:layout_height="fill_parent" android:textColor="#FFFFFF" 
+            />
+        <TextView  android:layout_width="wrap_content"
+            android:layout_height="fill_parent" android:textColor="#FFFFFF" 
+            android:id="@+id/tv_user_level"
+            />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView android:text="@string/user_gender" android:layout_width="wrap_content"
+            android:layout_height="fill_parent" android:textColor="#FFFFFF" />
+        <TextView  android:layout_width="wrap_content"
+            android:layout_height="fill_parent" android:textColor="#FFFFFF" 
+            android:id="@+id/tv_user_gender"
+            />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView android:text="@string/user_record" android:layout_width="wrap_content"
+            android:layout_height="fill_parent" android:textColor="#FFFFFF" />
+        <TextView  android:layout_width="wrap_content"
+            android:layout_height="fill_parent" android:textColor="#FFFFFF"
+            android:id="@+id/tv_user_records"
+             />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView android:text="@string/user_gold" android:layout_width="wrap_content"
+            android:layout_height="fill_parent" android:textColor="#FFFFFF" />
+        <TextView  android:layout_width="wrap_content"
+            android:layout_height="fill_parent" android:textColor="#FFFFFF"
+            android:id="@+id/tv_user_gold_num"
+             />
+    </LinearLayout>
+<!--  
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView android:text="@string/user_hong_tao" android:layout_width="wrap_content"
+            android:layout_height="fill_parent" android:textColor="#FFFFFF" />
+        <TextView  android:layout_width="wrap_content"
+            android:layout_height="fill_parent" android:textColor="#FFFFFF" 
+            android:id="@+id/tv_user_ingot"
+            />
+    </LinearLayout>
+   
+ 
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView android:text="@string/user_integral" android:layout_width="wrap_content"
+            android:layout_height="fill_parent" android:textColor="#FFFFFF" />
+        <TextView  android:layout_width="wrap_content"
+            android:layout_height="fill_parent" android:textColor="#FFFFFF"
+            android:id="@+id/tv_user_integral"
+             />
+    </LinearLayout>
+     -->
+<!-- 
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView android:text="@string/user_state" android:layout_width="wrap_content"
+            android:layout_height="fill_parent" android:textColor="#FFFFFF" />
+        <TextView android:text="空闲" android:layout_width="wrap_content"
+            android:layout_height="fill_parent" android:textColor="#FFFFFF" 
+            android:id="@+id/tv_user_state"
+            />
+    </LinearLayout>
+     -->
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView android:text="@string/user_title" android:layout_width="wrap_content"
+            android:layout_height="fill_parent" android:textColor="#FFFFFF" />
+        <TextView  android:layout_width="wrap_content"
+            android:layout_height="fill_parent" android:textColor="#FFFFFF" 
+            android:id="@+id/tv_user_title"
+            />
+    </LinearLayout>
+
+</LinearLayout>

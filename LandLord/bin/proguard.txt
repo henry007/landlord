@@ -1,0 +1,227 @@
+# view AndroidManifest.xml #generated:23
+-keep class com.hurray.landlord.App { <init>(...); }
+
+# view AndroidManifest.xml #generated:46
+-keep class com.hurray.landlord.activities.AfterFailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:42
+-keep class com.hurray.landlord.activities.AfterWinActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:66
+-keep class com.hurray.landlord.activities.ChatActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:186
+-keep class com.hurray.landlord.activities.CongratulationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:63
+-keep class com.hurray.landlord.activities.EmotionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:59
+-keep class com.hurray.landlord.activities.GameResultActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:25
+-keep class com.hurray.landlord.activities.Logo1Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:188
+-keep class com.hurray.landlord.activities.MyTurnTableSurfaceViewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:55
+-keep class com.hurray.landlord.activities.OfflineGameActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:70
+-keep class com.hurray.landlord.activities.OfflineHomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:112
+-keep class com.hurray.landlord.activities.OfflineTopActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:158
+-keep class com.hurray.landlord.activities.OnlineAwardActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:155
+-keep class com.hurray.landlord.activities.OnlineBindingPhoneActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:50
+-keep class com.hurray.landlord.activities.OnlineGameActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:120
+-keep class com.hurray.landlord.activities.OnlineGameListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:198
+-keep class com.hurray.landlord.activities.OnlineGameResultRankActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:184
+-keep class com.hurray.landlord.activities.OnlineGetRewardActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:123
+-keep class com.hurray.landlord.activities.OnlineGoodsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:116
+-keep class com.hurray.landlord.activities.OnlineHomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:162
+-keep class com.hurray.landlord.activities.OnlineIndividualActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:149
+-keep class com.hurray.landlord.activities.OnlineLoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:152
+-keep class com.hurray.landlord.activities.OnlineMotifyPsdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:204
+-keep class com.hurray.landlord.activities.OnlineNoticeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:132
+-keep class com.hurray.landlord.activities.OnlinePersonalActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:191
+-keep class com.hurray.landlord.activities.OnlinePrizeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:139
+-keep class com.hurray.landlord.activities.OnlineRegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:195
+-keep class com.hurray.landlord.activities.OnlineRisedWaitActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:144
+-keep class com.hurray.landlord.activities.OnlineSelfInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:126
+-keep class com.hurray.landlord.activities.OnlineStoreActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:129
+-keep class com.hurray.landlord.activities.OnlineTopActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:182
+-keep class com.hurray.landlord.activities.PopPersonInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:108
+-keep class com.hurray.landlord.activities.PossessionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:32
+-keep class com.hurray.landlord.activities.StartActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:166
+-keep class com.hurray.landlord.activities.TabActorInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:172
+-keep class com.hurray.landlord.activities.TabMobileBindActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:180
+-keep class com.hurray.landlord.activities.TabPaymentActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:201
+-keep class com.hurray.landlord.activities.TabPaymentDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:168
+-keep class com.hurray.landlord.activities.TabPersonalAchieveActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:174
+-keep class com.hurray.landlord.activities.TabPsdGetBackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:176
+-keep class com.hurray.landlord.activities.TabPsdModifyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:170
+-keep class com.hurray.landlord.activities.TabSystemInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:178
+-keep class com.hurray.landlord.activities.TabUserChangedActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:82
+-keep class com.hurray.landlord.receivers.ConnectivityReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:98
+-keep class com.hurray.landlord.server.MessageServerService { <init>(...); }
+
+# view AndroidManifest.xml #generated:94
+-keep class com.hurray.landlord.services.AppUpdateService { <init>(...); }
+
+# view AndroidManifest.xml #generated:96
+-keep class com.hurray.landlord.services.PlayMusicService { <init>(...); }
+
+# view AndroidManifest.xml #generated:76
+-keep class com.hurray.landlord.sms.SMSReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:135
+-keep class com.hurray.landlord.test.TestRegisterActivity { <init>(...); }
+
+# view res/layout/local_game_top_view.xml #generated:26
+# view res/layout/online_game_top_view.xml #generated:32
+-keep class com.hurray.landlord.view.BottomCardsView { <init>(...); }
+
+# view res/layout/acitivity_recharge_item.xml #generated:23
+-keep class com.hurray.landlord.view.DashedLine { <init>(...); }
+
+# view res/layout/activity_offline_game.xml #generated:19
+# view res/layout/activity_offline_game.xml #generated:28
+-keep class com.hurray.landlord.view.LocalAvatar { <init>(...); }
+
+# view res/layout/activity_offline_game.xml #generated:7
+-keep class com.hurray.landlord.view.LocalGameBgView { <init>(...); }
+
+# view res/layout/activity_offline_game.xml #generated:37
+-keep class com.hurray.landlord.view.LocalGameTopView { <init>(...); }
+
+# view res/layout/activity_online_game.xml #generated:16
+# view res/layout/activity_online_game.xml #generated:24
+# view res/layout/online_home_activity.xml #generated:71
+-keep class com.hurray.landlord.view.OnlineAvatar { <init>(...); }
+
+# view res/layout/activity_online_game.xml #generated:6
+-keep class com.hurray.landlord.view.OnlineGameBgView { <init>(...); }
+
+# view res/layout/activity_online_game.xml #generated:38
+-keep class com.hurray.landlord.view.OnlineGameTopView { <init>(...); }
+
+# view res/layout/activity_offline_game.xml #generated:62
+# view res/layout/activity_online_game.xml #generated:65
+-keep class com.hurray.landlord.view.SelfCardsView { <init>(...); }
+
+# view res/layout/activity_offline_game.xml #generated:45
+# view res/layout/activity_offline_game.xml #generated:53
+# view res/layout/activity_offline_game.xml #generated:68
+# view res/layout/activity_online_game.xml #generated:50
+# view res/layout/activity_online_game.xml #generated:57
+# view res/layout/activity_online_game.xml #generated:70
+-keep class com.hurray.landlord.view.ShowCardsView { <init>(...); }
+
+# view res/layout/activity_online_game.xml #generated:45
+# view res/layout/local_game_top_view.xml #generated:34
+# view res/layout/offline_home_activity.xml #generated:64
+# view res/layout/start_activity.xml #generated:100
+-keep class com.hurray.landlord.view.SoundPanel { <init>(...); }
+
+# view res/layout/start_activity.xml #generated:94
+-keep class com.hurray.landlord.view.StartMenuView { <init>(...); }
+
+# view res/layout/online_home_activity.xml #generated:49
+-keep class com.hurray.landlord.view.TextProgressBar { <init>(...); }
+
+# view res/layout/turntable_surfaceview.xml #generated:13
+-keep class com.hurray.landlord.view.TurnTableView { <init>(...); }
+
+# view res/layout/individual_info.xml #generated:17
+-keep class com.hurray.landlord.view.VerticalTabWigdet { <init>(...); }
+
+# view AndroidManifest.xml #generated:217
+-keep class com.juzi.main.DownLing { <init>(...); }
+
+# view AndroidManifest.xml #generated:213
+-keep class com.juzi.main.TheAdVirtualGoods { <init>(...); }
+
+# view AndroidManifest.xml #generated:221
+-keep class com.juzi.main.WebActivity { <init>(...); }
+
+# onClick res/layout/message_example.xml #generated:40
+-keepclassmembers class * { *** doClear(...); }
+
+# onClick res/layout/message_example.xml #generated:20
+-keepclassmembers class * { *** doConnect(...); }
+
+# onClick res/layout/message_example.xml #generated:32
+# onClick res/layout/message_item.xml #generated:6
+-keepclassmembers class * { *** doSend(...); }
+
+# onClick res/layout/message_example.xml #generated:13
+-keepclassmembers class * { *** doTestPage(...); }
+

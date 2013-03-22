@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="430dp"
+    android:layout_height="260dp"
+    android:background="@drawable/shape_bg">
+    
+	<ImageView android:layout_width="140dp"
+		android:layout_height="210dp"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true"
+		android:layout_marginRight="4dp"
+		android:layout_marginBottom="2dp"
+		android:background="@drawable/get_reward_girl"/>
+		
+    <ImageView
+        android:id="@+id/imageView1"
+     	android:layout_width="175dp"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/jiang_01" 
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="80dp"
+        android:text="主人，今天是你第一天登录，赠送你300金币！\n连续登录有更多好礼噢"
+        android:textColor="@android:color/white" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+         android:layout_height="46dp"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@id/desc"
+        android:gravity="center"
+         >
+
+        <ImageView
+            android:id="@+id/gift_type"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/img_money_big" />
+        <TextView 
+            android:id="@+id/award_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X 300"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+           android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/gift_type"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="@drawable/net_btn"
+        android:gravity="center"
+        android:text="领奖进入游戏"
+         android:textSize="12sp"
+        android:textColor="@android:color/white" 
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        />
+
+</RelativeLayout>

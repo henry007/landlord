@@ -1,0 +1,1078 @@
+android.annotation.SuppressLint
+android.annotation.TargetApi
+com.alipay.android.app.IAliPay
+com.alipay.android.app.IAliPay$Stub
+com.alipay.android.app.IAlixPay$Stub:
+    public IAlixPay$Stub()
+    public android.os.IBinder asBinder()
+com.alipay.android.app.IRemoteServiceCallback$Stub:
+    public IRemoteServiceCallback$Stub()
+    public android.os.IBinder asBinder()
+com.alipay.android.app.a
+com.hurray.landlord.App:
+    private static final java.lang.String TAG
+com.hurray.landlord.AsyncTask2:
+    private static final java.lang.String LOG_TAG
+    private static final int CORE_POOL_SIZE
+    private static final int MAXIMUM_POOL_SIZE
+    private static final int KEEP_ALIVE
+    private static final int MESSAGE_POST_RESULT
+    private static final int MESSAGE_POST_PROGRESS
+    private static final int MESSAGE_POST_CANCEL
+    215:215:public final com.hurray.landlord.AsyncTask2$Status getStatus()
+    315:315:public final boolean cancel(boolean)
+    330:330:public final java.lang.Object get()
+    350:350:public final java.lang.Object get(long,java.util.concurrent.TimeUnit)
+com.hurray.landlord.BuildConfig
+com.hurray.landlord.Constants
+com.hurray.landlord.R:
+    10:10:public R()
+com.hurray.landlord.R$anim
+com.hurray.landlord.R$array
+com.hurray.landlord.R$attr
+com.hurray.landlord.R$color
+com.hurray.landlord.R$dimen
+com.hurray.landlord.R$drawable
+com.hurray.landlord.R$id
+com.hurray.landlord.R$layout
+com.hurray.landlord.R$raw
+com.hurray.landlord.R$string
+com.hurray.landlord.R$style
+com.hurray.landlord.R$styleable:
+    public static final int TextProgressBar_text
+    public static final int TextProgressBar_textColor
+    public static final int TextProgressBar_textSize
+    1633:1633:public R$styleable()
+com.hurray.landlord.activities.BaseNetActivity:
+    private static final java.lang.String TAG
+com.hurray.landlord.activities.ChatActivity:
+    public static final java.lang.String CHAT
+    public static final java.lang.String CHAT_ID
+com.hurray.landlord.activities.CongratulationActivity:
+    public static final java.lang.String SERVER_MATCH_RESULT
+com.hurray.landlord.activities.CongratulationActivity$TextAnimListener:
+    373:375:public CongratulationActivity$TextAnimListener(android.widget.TextView)
+com.hurray.landlord.activities.EmotionActivity:
+    public static final java.lang.String EMOTION_ID
+com.hurray.landlord.activities.GameResultActivity:
+    public static final java.lang.String GAME_RESULT
+    public static final java.lang.String AUTO_CLOSE
+    public static final java.lang.String GAME_TYPE
+    public static final int BTN_GOON
+    public static final int BTN_EXIT
+    private static final int AUTO_CLOSE_DELAY
+com.hurray.landlord.activities.Logo1Activity:
+    private static final java.lang.String TAG
+com.hurray.landlord.activities.MyTurnTableSurfaceViewActivity:
+    private static final java.lang.String TAG
+com.hurray.landlord.activities.NetTabActivity:
+    private static final java.lang.String TAG
+    140:143:protected void playBgMusic()
+    146:149:protected void stopBgMusic()
+    153:158:protected void stopMessageServer()
+com.hurray.landlord.activities.OfflineGameActivity:
+    public static final java.lang.String SELECTED_LIST
+    private static final java.lang.String TAG
+    private static final int TEXT_SHOW_PEROID
+    private static final int REQ_WIN_RESULT
+    private static final int REQ_FAIL_RESULT
+    private static final int REQ_GAME_RESULT
+    private static final int UI_HIDE_ALL_BTN
+    private static final int UI_SHOW_START_BTN_ONLY
+    private static final int UI_SHOW_DECLARE_LORD_BTN_ONLY
+    private static final int UI_HIDE_DECLARE_LORD_BTN
+    private static final int UI_SHOW_ROB_LORD_BTN
+    private static final int UI_HIDE_ROB_LORD_BTN
+    private static final int UI_SHOW_FIRST_SHOW_GAME_BTN
+    private static final int UI_SHOW_FOLLOW_GAME_BTN
+    private static final int UI_HIDE_GAME_BTN
+    private static final int UI_SHOW_BOTTOM_CARDS
+    private static final int UI_HIDE_BOTTOM_CARDS
+    private static final int UI_SHOW_RIGHT_TEXT
+    private static final int UI_HIDE_RIGHT_TEXT
+    private static final int UI_SHOW_LEFT_TEXT
+    private static final int UI_HIDE_LEFT_TEXT
+    private static final int UI_SHOW_SELF_TEXT
+    private static final int UI_HIDE_SELF_TEXT
+    private static final int UI_SHOW_BOMB_ANIM
+    private static final int UI_SHOW_PLANE_ANIM
+    private static final int UI_SHOW_ROCKET_ANIM
+    private static final int UI_SHOW_DOUBLE_DRAGON_ANIM
+    private static final int UI_SHOW_SINGLE_DRAGON_ANIM
+    private static final int UI_SHOW_LEFT_PLUS_ANIM
+    private static final int UI_SHOW_RIGHT_PLUS_ANIM
+    private static final int UI_SHOW_SELF_PLUS_ANIM
+    private static final int UI_RESET_LORD_CUP
+    private static final int UI_UPDATE_LORD_CUP
+    private static final int UI_UPDATE_LEFT_CARD_NUM
+    private static final int UI_UPDATE_RIGHT_CARD_NUM
+    private static final int UI_UPDATE_SELF_CARDS
+    private static final int ALLOC_CARD_PEROID
+    2170:2176:private void letRobotControl()
+com.hurray.landlord.activities.OfflineTopActivity:
+    private static final int DIALOG_TEXT_ENTRY
+    private static final java.lang.String TOP_LIST_PLAYER_FILE
+    private static final java.lang.String TOP_LIST_PLAYER_NAME
+com.hurray.landlord.activities.OnlineGameActivity:
+    private static final java.lang.String TAG
+    public static final java.lang.String ROOM_INFO
+    private static final long ONE_SECOND
+    private static final int TEXT_SHOW_PEROID
+    private static final int REQ_CHAT
+    private static final int REQ_EMOTION
+    private static final int REQ_WIN_RESULT
+    private static final int REQ_FAIL_RESULT
+    private static final int REQ_GAME_RESULT
+    private static final int REQ_CONGRATULATION
+    private static final int UI_HIDE_TIMER
+    private static final int UI_HIDE_ALL_BTN
+    private static final int UI_SHOW_START_BTN_ONLY
+    private static final int UI_SHOW_DECLARE_LORD_BTN_ONLY
+    private static final int UI_HIDE_DECLARE_LORD_BTN
+    private static final int UI_SHOW_ROB_LORD_BTN
+    private static final int UI_HIDE_ROB_LORD_BTN
+    private static final int UI_SHOW_FIRST_SHOW_GAME_BTN
+    private static final int UI_SHOW_FOLLOW_GAME_BTN
+    private static final int UI_HIDE_GAME_BTN
+    private static final int UI_SHOW_BOTTOM_CARDS
+    private static final int UI_HIDE_BOTTOM_CARDS
+    private static final int UI_SHOW_RIGHT_TEXT
+    private static final int UI_HIDE_RIGHT_TEXT
+    private static final int UI_SHOW_LEFT_TEXT
+    private static final int UI_HIDE_LEFT_TEXT
+    private static final int UI_SHOW_SELF_TEXT
+    private static final int UI_HIDE_SELF_TEXT
+    private static final int UI_SHOW_BOMB_ANIM
+    private static final int UI_SHOW_PLANE_ANIM
+    private static final int UI_SHOW_ROCKET_ANIM
+    private static final int UI_SHOW_DOUBLE_DRAGON_ANIM
+    private static final int UI_SHOW_SINGLE_DRAGON_ANIM
+    private static final int UI_START_UPGRADE_ANIM
+    private static final int UI_SHOW_LEFT_PLUS_ANIM
+    private static final int UI_SHOW_RIGHT_PLUS_ANIM
+    private static final int UI_SHOW_SELF_PLUS_ANIM
+    private static final int UI_RESET_LORD_CUP
+    private static final int UI_UPDATE_LORD_CUP
+    private static final int UI_UPDATE_LEFT_CARD_NUM
+    private static final int UI_UPDATE_RIGHT_CARD_NUM
+    private static final int UI_UPDATE_SELF_CARDS
+    private static final int ALLOC_CARD_PEROID
+    public static final java.lang.String GAME_TYPE
+    public static final java.lang.String WAIT_ACTIVITY_INFO
+com.hurray.landlord.activities.OnlineGameListActivity:
+    private static final java.lang.String TAG
+    private static final int DIALOG_ONLINE_SIGN_IN_WAITING
+    private static final int DIALOG_ONLINE_SIGN_IN_WAITING_PERSON
+    private static final int ONE_SEC
+    217:219:private void reqPersonCenter()
+com.hurray.landlord.activities.OnlineGameResultRankActivity:
+    public static final java.lang.String GAME_RESULT_RANK
+    private com.hurray.landlord.entity.OnlineRankInfos mRankInfos
+com.hurray.landlord.activities.OnlineGoodsActivity:
+    296:307:protected void setAvartar(int)
+com.hurray.landlord.activities.OnlineHomeActivity:
+    private static final int STARTTREASUREANIM
+    private static final int STARTAWARDANIM
+    private static final int STOPTREASUREANIM
+    private static final int STOPAWARDANIM
+    782:784:public void changeAvatar(int,int)
+com.hurray.landlord.activities.OnlineNoticeActivity:
+    public static final java.lang.String key
+com.hurray.landlord.activities.OnlineRegisterActivity:
+    private static final java.lang.String PASSWORD
+    114:120:private android.widget.ArrayAdapter getAutoCompleteAdapter(java.lang.String)
+com.hurray.landlord.activities.OnlineStoreActivity:
+    private android.widget.ProgressBar mBar
+    private static final int DIALOG_PURCHASE_SUCCESS
+    private static final int DIALOG_PURCHASE_CONFIRM
+com.hurray.landlord.activities.PopPersonInfoActivity:
+    public static final java.lang.String USER_INFO
+com.hurray.landlord.activities.PossessionActivity:
+    private static final java.lang.String TAG
+    private static final int MSG_REFRESH_LIST
+com.hurray.landlord.activities.StartActivity:
+    private static final java.lang.String TAG
+    public static final int DIALOG_ABOUT
+    public static final int DIALOG_HELP
+    public static final int DIALOG_EXIT
+    private static final int AVATAR_RES_BYTES
+    private static final int TIME_OUT_SECS
+    private static final int START_ACTIVITY_DELAY
+    315:333:private boolean unzipFromAssetsToAvatar(java.lang.String)
+com.hurray.landlord.activities.TabPaymentActivity:
+    public static final java.lang.String KEY_FEE_MONEY
+    public static final java.lang.String KEY_FEE_GOLD
+com.hurray.landlord.activities.TabPersonalAchieveActivity:
+    private static final java.lang.String IMAGE
+    private static final java.lang.String NAME
+    private static final java.lang.String DESCRIPT
+com.hurray.landlord.activities.TabPsdGetBackActivity:
+    public static final java.lang.String MAIL
+    private android.widget.Button mBtnGetPsdBack
+    private android.view.animation.Animation shake
+    92:99:public void initView()
+com.hurray.landlord.activities.TabPsdModifyActivity:
+    public static final java.lang.String PASSWORD
+    public static final java.lang.String MAIL
+com.hurray.landlord.activities.TabSystemInfoActivity:
+    private static final java.lang.String TAG
+com.hurray.landlord.activities.TabUserChangedActivity:
+    private static final java.lang.String TAG
+    public static final java.lang.String PASSWORD
+    public static final java.lang.String MAIL
+com.hurray.landlord.adapter.BeautyDbAdapter:
+    public static final java.lang.String KEY_NAME
+    public static final java.lang.String KEY_STATUS
+    public static final java.lang.String KEY_ROWID
+    private static final java.lang.String TAG
+    private static final java.lang.String DATABASE_CREATE
+    private static final java.lang.String DATABASE_NAME
+    private static final java.lang.String DATABASE_TABLE
+    private static final int DATABASE_VERSION
+    85:91:public android.database.Cursor fetchBeauty(java.lang.String)
+com.hurray.landlord.adapter.OfflineTopDbadapter:
+    private static final java.lang.String KEY_NAME
+    public static final java.lang.String KEY_SCORE
+    private static final java.lang.String KEY_ROWID
+    private static final java.lang.String TAG
+    private static final java.lang.String DATABASE_CREATE
+    private static final java.lang.String DELETE_EXCESS_DATA
+    private static final java.lang.String DATABASE_NAME
+    private static final java.lang.String DATABASE_TABLE
+    private static final int DATABASE_VERSION
+com.hurray.landlord.adapter.OnlineGameListAdapter:
+    private static final java.lang.String name
+com.hurray.landlord.animation.FrameAnim:
+    private static final java.lang.String TAG
+    35:36:public void setAutoClear(boolean)
+com.hurray.landlord.animation.GeneralAnim
+com.hurray.landlord.animation.GeneralFrameAnim
+com.hurray.landlord.animation.ImageTweenFrameAnim:
+    private static final java.lang.String TAG
+    95:96:public void setAutoClear(boolean)
+com.hurray.landlord.animation.TextAnimation:
+    private static final java.lang.String TAG
+com.hurray.landlord.animation.TweenAnim:
+    private static final java.lang.String TAG
+    34:35:public void setInfinite()
+com.hurray.landlord.bitmaps.BitmapUtil:
+    private static final java.lang.String TAG
+    8:8:public BitmapUtil()
+com.hurray.landlord.bitmaps.CardFgsBitmap:
+    13:13:public CardFgsBitmap()
+com.hurray.landlord.bitmaps.CardSoftBitmapRef:
+    private static final java.lang.String TAG
+    private static final int CARD_BG_ID
+com.hurray.landlord.bitmaps.CardsBitmap:
+    11:11:public CardsBitmap()
+com.hurray.landlord.bitmaps.SoftBitmapRef:
+    private static final java.lang.String TAG
+    69:73:public android.graphics.Bitmap getScaledBitmap(float)
+com.hurray.landlord.entity.Achievement
+com.hurray.landlord.entity.ActorInfo
+com.hurray.landlord.entity.AwardInfo
+com.hurray.landlord.entity.BeautyInfo:
+    18:19:public void setName(java.lang.String)
+com.hurray.landlord.entity.EmotionInfo
+com.hurray.landlord.entity.GameInfo:
+    49:49:public java.lang.Integer getTotalNum()
+    57:57:public java.lang.Integer getFaleNum()
+com.hurray.landlord.entity.MyPreferrences$AccountPreferrence:
+    public boolean savePwd
+    public java.lang.String user
+    public java.lang.String nick
+    public java.lang.String pass
+    public int userId
+    64:65:public synchronized void registerOnSharedPreferenceChangeListener(android.content.SharedPreferences$OnSharedPreferenceChangeListener)
+    69:70:public synchronized void unregisterOnSharedPreferenceChangeListener(android.content.SharedPreferences$OnSharedPreferenceChangeListener)
+    73:74:public synchronized void setOnlinePrizeDesc(java.lang.String)
+    77:77:public synchronized java.lang.String getOnlinePrizeDesc(java.lang.String)
+    120:120:public synchronized boolean isSavePwd(boolean)
+    124:125:public synchronized void setSavePwd(boolean)
+    128:128:public synchronized java.lang.String getUser(java.lang.String)
+    132:133:public synchronized void setUser(java.lang.String)
+    136:136:public synchronized java.lang.String getNick(java.lang.String)
+    140:141:public synchronized void setNick(java.lang.String)
+    144:144:public synchronized java.lang.String getPass(java.lang.String)
+    148:149:public synchronized void setPass(java.lang.String)
+    156:157:public synchronized void setUserId(int)
+    160:160:public synchronized long getUserId(long)
+    232:232:public synchronized int getLevel(int)
+    240:240:public synchronized int getCurrentExp(int)
+    248:248:public synchronized int getNextExp(int)
+    256:256:public synchronized boolean getSilence(boolean)
+    260:261:public synchronized void setSilence(boolean)
+com.hurray.landlord.entity.OldChatInfo
+com.hurray.landlord.entity.OnlineRankInfos
+com.hurray.landlord.entity.RisedWaitActivityInfos:
+    private static final long serialVersionUID
+    private java.lang.String avatar
+    19:19:public java.lang.String getAvatar()
+    23:24:public void setAvatar(java.lang.String)
+    43:43:public java.lang.String getPrizeInfo()
+    51:51:public java.lang.String getRuleInfo()
+com.hurray.landlord.entity.Top
+com.hurray.landlord.entity.UserInfo:
+    private static final long serialVersionUID
+    private java.lang.String mAvatarUrl
+    private java.lang.String mSignature
+    private java.lang.String[] mAchievements
+    private java.lang.Integer mTotalAchievement
+    private java.lang.Integer mTopLevelNum
+    private java.lang.Integer mTopWealthNum
+    52:52:public java.lang.Long getUserId()
+    56:57:public void setUserId(java.lang.Long)
+    60:60:public java.lang.String getAvatarUrl()
+    64:65:public void setAvatarUrl(java.lang.String)
+    76:76:public java.lang.String getSignature()
+    80:81:public void setSignature(java.lang.String)
+    84:84:public java.lang.Integer getExperience()
+    92:92:public java.lang.Integer getNextExperience()
+    148:148:public com.hurray.landlord.entity.PlayersStatus getStatus()
+    164:164:public java.lang.String[] getAchievements()
+    168:169:public void setAchievements(java.lang.String[])
+    172:172:public java.lang.Integer getTotalAchievement()
+    176:177:public void setTotalAchievement(java.lang.Integer)
+    180:180:public java.lang.Integer getTopLevelNum()
+    184:185:public void setTopLevelNum(java.lang.Integer)
+    188:188:public java.lang.Integer getTopWealthNum()
+    192:193:public void setTopWealthNum(java.lang.Integer)
+    208:208:public java.lang.String getValue(java.lang.String)
+com.hurray.landlord.game.BaseAnalyzer:
+    private static final java.lang.String TAG
+    479:600:public int[] getMinValueType(int)
+com.hurray.landlord.game.CardHelper:
+    protected int leftCardNum
+com.hurray.landlord.game.CardHelperHandler:
+    8:8:public CardHelperHandler()
+com.hurray.landlord.game.CardIdsFilter:
+    10:13:public CardIdsFilter(int)
+    40:44:public int getCardId(int)
+com.hurray.landlord.game.CardType
+com.hurray.landlord.game.CardUtil:
+    private static final java.lang.String TAG
+    public static final int CARD_J_VAL
+    public static final int CARD_Q_VAL
+    public static final int CARD_K_VAL
+    public static final int CARD_A_VAL
+    public static final int CARD_2_VAL
+    public static final int S_JOKER_VAL
+    public static final int B_JOKER_VAL
+    public static final int S_JOKER_ID
+    public static final int B_JOKER_ID
+    public static final int SUITS_FANG_KUAI
+    public static final int SUITS_MEI_HUA
+    public static final int SUITS_HONG_TAO
+    public static final int SUITS_HEI_TAO
+    public static final int SUITS_S_JOKER
+    public static final int SUITS_B_JOKER
+    private static final int SHOW_CARD_NUM_PERCENT_IN_DANGER
+    private static final int TRY_YOUR_BEST_BEAT_ENEMY
+    private static final int HALF_HALF
+    private static final int LET_COMPANY_BEAT_ENEMY
+    private static final int SMALLEST_BIG_CARD_VALUE
+    private static final int BIGGEST_SMALL_CARD_VALUE
+    private static final int DANGER_ENEMY_LEFT_CARD_NUM
+    private static final int SAFE_COMPANY_LEFT_CARD_NUM
+    private static final int SAFE_SELF_HAND_COUNT
+    11:11:public CardUtil()
+    168:168:public static int getNormCardId(int,int)
+    194:198:public static boolean isValidCardType(int[])
+    878:878:public static boolean isLandLord(int,int,int)
+    882:882:public static boolean isLandLord(int,int)
+com.hurray.landlord.game.GameSoundUtil:
+    14:14:public GameSoundUtil()
+com.hurray.landlord.game.Robot:
+    16:16:public com.hurray.landlord.game.data.PlayerContext getPlayerContext()
+com.hurray.landlord.game.data.GameResult:
+    private static final long serialVersionUID
+    public boolean isRised
+    private com.hurray.lordserver.protocol.message.card.MatchEndPush$PlayersRank[] results
+com.hurray.landlord.game.data.PlayerContext:
+    public static final int THINKING_IDLE
+    public static final int THINKING_SHOW_CARD
+    public static final int THINKING_FOLLOW_CARD
+    58:59:public void setBottomCardIds(int[])
+    96:96:public boolean isEnemy(int)
+    129:132:public void setLeftCardNums(int[])
+    139:140:public void setSelfPlayerLeftCardNum(int)
+    167:167:public boolean isPrevShowPlayerInSelfPos()
+    171:171:public boolean isPrevShowPlayerInPrevPos()
+    175:175:public boolean isPrevShowPlayerInNextPos()
+    203:203:public boolean isThinkingIdle()
+    209:229:public int[] justGetSelectedCards()
+    373:373:public int[] getPrevShowCardIds()
+    381:381:public int getPrevShowPlayerId()
+com.hurray.landlord.game.data.RoomInfo:
+    private static final long serialVersionUID
+    private static final java.lang.String TAG
+    private static final int ONE_SEC
+    195:195:public boolean isSelfPlayer(long)
+com.hurray.landlord.game.data.RoomInfo$SignInPlayer:
+    private static final long serialVersionUID
+com.hurray.landlord.game.data.Sex
+com.hurray.landlord.game.local.AchievesRec:
+    private static final java.lang.String TAG
+    public static final int ACHIEVE_ID_FG0
+    public static final int ACHIEVE_ID_FG1_SLWS
+    public static final int ACHIEVE_ID_FG2_PLW
+    public static final int ACHIEVE_ID_BG0
+    public static final int ACHIEVE_ID_BG1_FXX
+    public static final int ACHIEVE_ID_BG2_FTZZ
+    public static final int ACHIEVE_ID_KQS
+    public static final int ACHIEVE_ID_DYJ
+    private static final java.lang.String ACHIEVES
+    private static final java.lang.String ACHIEVED
+    private static final java.lang.String SELECTED
+    16:16:public AchievesRec()
+com.hurray.landlord.game.local.Effects:
+    public static final int CARD_FG_0
+    public static final int CARD_FG_1
+    public static final int CARD_FG_2
+    public static final int GAME_BG_0
+    public static final int GAME_BG_1
+    public static final int GAME_BG_2
+    private static final java.lang.String CARD_FG
+    private static final java.lang.String GAME_BG
+    private static final java.lang.String BEAUTY_ANNA
+    private static final java.lang.String BEAUTY_JENNY
+    11:11:public Effects()
+    67:68:public static boolean isAnnaOn()
+    83:84:public static boolean isJennyOn()
+com.hurray.landlord.game.local.GameStep:
+    13:14:public void reset()
+com.hurray.landlord.game.local.LandLordPlayer:
+    private static final java.lang.String TAG
+    private static final int ROBOT_DELAY
+    107:109:public void switchToRobot()
+    127:127:public java.lang.String getNickName()
+    135:135:public int[] getLeftCardsNum()
+com.hurray.landlord.game.local.LocalRoom:
+    private static final java.lang.String TAG
+    private static final int RUN_WAITING_DELAY
+    private static final int START_SHOW_CARDS_DELAY
+    private static final int START_DELCARE_LORD_DELAY
+    private static final int ROB_LORD_DELAY
+    private static final int RUN_DECLARE_LORD_LOOP_DELAY
+    private static final int REPORT_MARKS_DELAY
+    private static final int RUN_SHOW_CARDS_DELAY
+    private static final int SHOW_GAME_RESULT_DELAY
+    private static final int READY_TIME_OUT_DELAY
+    private static final int DECLARE_LORD_TIME_OUT_DELAY
+    private static final int SHOW_CARDS_TIME_OUT_DELAY
+    private static final long ROB_LORD_TIME_OUT_DELAY
+    85:93:public LocalRoom(java.util.List,boolean)
+com.hurray.landlord.game.local.LocalRoom$DeclareLordInfo:
+    private static final long serialVersionUID
+    public static final int MAX_DECLARE_NUM
+com.hurray.landlord.game.local.LocalRoom$ShowCardsInfo:
+    private static final long serialVersionUID
+    public static final int THINKING_IDLE
+    public static final int THINKING_SHOW_CARD
+    public static final int THINKING_FOLLOW_CARD
+com.hurray.landlord.game.local.ScoreRec:
+    private static final java.lang.String MATCH_RECORD
+    private static final java.lang.String ROUND_SCORE
+    9:9:public ScoreRec()
+com.hurray.landlord.game.online.CardIdAdapter:
+    5:5:public CardIdAdapter()
+    40:40:public static int toServerCardId(int)
+    59:59:public static int toClientCardId(int)
+com.hurray.landlord.game.online.CommonMsgIntercepter
+com.hurray.landlord.game.online.FakeOnlineServer
+com.hurray.landlord.game.online.FakeOnlineServer$1
+com.hurray.landlord.game.online.MessageAdapter:
+    private static final java.lang.String TAG
+    private static final int ONE_SEC
+com.hurray.landlord.game.online.OnlineServer:
+    private static final java.lang.String TAG
+    private static final int NOTIFY_SENT
+    private static final int NOTIFY_RECEIVED
+    private static final int LONG_SERVER_MESSAGE_DELAY
+    private static final int SUPER_LONG_SERVER_MESSAGE_DELAY
+com.hurray.landlord.game.online.UidException:
+    private static final long serialVersionUID
+com.hurray.landlord.game.ui.Player:
+    protected static final java.lang.String TAG
+    29:29:public boolean isNull()
+    33:34:public void setSex(int)
+    37:38:public void setPlayerId(int)
+com.hurray.landlord.game.ui.Player$NullPlayer:
+    106:106:public boolean isNull()
+    117:117:public int getPreShowCardIdNum()
+com.hurray.landlord.game.ui.UiConstants:
+    private static final java.lang.String TAG
+    public static final float SMALL_SCALE
+    private static final int SELF_CARD_WIDTH_DP
+    private static final int SELF_CARD_HEIGHT_DP
+    private static final int SELF_CARDS_GAP_DP
+    public static final int MAX_COL
+    public static final int MAX_ROW
+    11:11:public UiConstants()
+com.hurray.landlord.game.ui.UiSpeakHistory:
+    6:6:public UiSpeakHistory()
+com.hurray.landlord.net.http.HttpAsyncTask:
+    private static final java.lang.String TAG
+    private static final int HTTP_PROGRESS_CONNECTING
+    private static final int HTTP_PROGRESS_READING
+    private static final int HTTP_PROGRESS_FINISHED
+    private static final int MAX_CONCURRENT_THREAD_NUM
+    private static final int MAX_REPEAT_REQUEST_TIMES
+    private android.app.ProgressDialog mProgressDialog
+com.hurray.landlord.net.http.HttpRequest:
+    private static final long serialVersionUID
+    public static final java.lang.String GET
+    public static final java.lang.String POST
+    protected boolean mZipped
+    50:52:private HttpRequest()
+    63:63:public boolean isZipped()
+    67:68:public void setZipped(boolean)
+    87:87:public java.lang.Object[] getExtraValue()
+    94:95:public void setExtraValue(java.lang.Object[])
+    136:137:public void setReqURL(java.lang.String)
+    143:143:public java.lang.String getContentType()
+    150:151:public void setContentType(java.lang.String)
+com.hurray.landlord.net.http.HttpResponse:
+    private static final long serialVersionUID
+    private static final java.lang.String TAG
+    public static final int RESULT_CODE_HTTP_ERROR
+    public static final int RESULT_CODE_UNKNOWN
+    public static final int RESULT_CODE_UNKNOWN_HOST
+    public static final int RESULT_CODE_PROTOCOL_ERROR
+    public static final int RESULT_CODE_LOCAL_SDCARD_FULL
+    public static final int RESULT_CODE_OK
+    52:52:public java.lang.String getErrorMessage()
+com.hurray.landlord.net.http.ThreadSafeHttpClient:
+    18:19:public ThreadSafeHttpClient(org.apache.http.params.HttpParams)
+com.hurray.landlord.net.http.multipart.ByteArrayPartSource
+com.hurray.landlord.net.http.multipart.FilePart
+com.hurray.landlord.net.http.multipart.FilePartSource
+com.hurray.landlord.net.http.multipart.MultipartEntity
+com.hurray.landlord.net.http.multipart.Part
+com.hurray.landlord.net.http.multipart.PartBase
+com.hurray.landlord.net.http.multipart.PartSource
+com.hurray.landlord.net.http.multipart.StringPart
+com.hurray.landlord.net.http.req.CheckNameRequest
+com.hurray.landlord.net.http.req.GetApkRequest:
+    private static final long serialVersionUID
+    private static final java.lang.String TAG
+com.hurray.landlord.net.http.req.IndivigualCentersRequset
+com.hurray.landlord.net.http.req.LogInRequest
+com.hurray.landlord.net.http.req.QueryFriendsRequst
+com.hurray.landlord.net.http.req.QueryGameListRequest
+com.hurray.landlord.net.http.req.QueryTopRequest
+com.hurray.landlord.net.http.req.RegisterRequest
+com.hurray.landlord.net.http.req.UpdateSignatureRequest
+com.hurray.landlord.net.http.resp.CheckNameResponse
+com.hurray.landlord.net.http.resp.GetApkResponse:
+    private static final long serialVersionUID
+com.hurray.landlord.net.http.resp.LogInResponse
+com.hurray.landlord.net.http.resp.QueryGameListResponse
+com.hurray.landlord.net.http.resp.QueryTopResponse
+com.hurray.landlord.net.http.resp.RegisterResponse
+com.hurray.landlord.net.http.resp.UpdateSignatureResponse
+com.hurray.landlord.net.json.JsonHelper:
+    private static final java.lang.String TAG
+    15:22:protected java.lang.String filter(java.lang.String)
+    26:35:protected org.json.JSONObject getRespJsonObject(java.lang.String)
+    40:48:protected int getJsonInt(org.json.JSONObject,java.lang.String,int)
+    53:61:protected long getJsonLong(org.json.JSONObject,java.lang.String,long)
+    66:74:protected double getJsonDouble(org.json.JSONObject,java.lang.String,double)
+    79:87:protected boolean getJsonBoolean(org.json.JSONObject,java.lang.String,boolean)
+    92:100:protected java.lang.String getJsonString(org.json.JSONObject,java.lang.String)
+    105:113:protected org.json.JSONArray getJsonArray(org.json.JSONObject,java.lang.String)
+    118:126:protected org.json.JSONObject getJsonObj(org.json.JSONArray,int)
+com.hurray.landlord.net.socket.ClientMessage:
+    private static final java.lang.String TAG
+    private static final long serialVersionUID
+    26:27:public void setMsgType(int)
+    34:46:public java.io.OutputStream out(java.io.OutputStream)
+    protected abstract java.lang.String packJson()
+com.hurray.landlord.net.socket.ServerMessage:
+    private static final long serialVersionUID
+    private static final java.lang.String TAG
+    21:30:public ServerMessage(com.hurray.landlord.net.socket.SocketStream)
+    protected abstract void unPackJson(java.lang.String)
+com.hurray.landlord.net.socket.SocketStream
+com.hurray.landlord.net.socket.clt.ClientChat:
+    private static final long serialVersionUID
+    44:60:protected java.lang.String packJson()
+com.hurray.landlord.net.socket.clt.ClientDeclareLord:
+    private static final long serialVersionUID
+    35:46:protected java.lang.String packJson()
+com.hurray.landlord.net.socket.clt.ClientEmotion:
+    private static final long serialVersionUID
+    36:50:protected java.lang.String packJson()
+com.hurray.landlord.net.socket.clt.ClientGoon:
+    private static final long serialVersionUID
+    29:39:protected java.lang.String packJson()
+com.hurray.landlord.net.socket.clt.ClientGotCards:
+    private static final long serialVersionUID
+    28:38:protected java.lang.String packJson()
+com.hurray.landlord.net.socket.clt.ClientHeartBeat
+com.hurray.landlord.net.socket.clt.ClientLeaveRoom:
+    private static final long serialVersionUID
+    18:18:protected java.lang.String packJson()
+com.hurray.landlord.net.socket.clt.ClientMessageType
+com.hurray.landlord.net.socket.clt.ClientReady:
+    private static final long serialVersionUID
+    29:39:protected java.lang.String packJson()
+com.hurray.landlord.net.socket.clt.ClientRobLord:
+    private static final long serialVersionUID
+    37:48:protected java.lang.String packJson()
+com.hurray.landlord.net.socket.clt.ClientRobot:
+    private static final long serialVersionUID
+    36:47:protected java.lang.String packJson()
+com.hurray.landlord.net.socket.clt.ClientShowCards:
+    private static final long serialVersionUID
+    43:63:protected java.lang.String packJson()
+com.hurray.landlord.net.socket.clt.ClientShowPass:
+    private static final long serialVersionUID
+    28:38:protected java.lang.String packJson()
+com.hurray.landlord.net.socket.clt.ClientSignIn:
+    private static final long serialVersionUID
+    24:24:public int getGameType()
+    29:39:protected java.lang.String packJson()
+com.hurray.landlord.net.socket.clt.ClientSignOut:
+    private static final long serialVersionUID
+    18:18:protected java.lang.String packJson()
+com.hurray.landlord.net.socket.srv.ServerAllocCards:
+    private static final long serialVersionUID
+    21:22:public ServerAllocCards(com.hurray.landlord.net.socket.SocketStream)
+    41:55:protected void unPackJson(java.lang.String)
+com.hurray.landlord.net.socket.srv.ServerChat:
+    private static final long serialVersionUID
+    20:21:public ServerChat(com.hurray.landlord.net.socket.SocketStream)
+    38:46:protected void unPackJson(java.lang.String)
+com.hurray.landlord.net.socket.srv.ServerDeclareResult:
+    private static final long serialVersionUID
+    25:26:public ServerDeclareResult(com.hurray.landlord.net.socket.SocketStream)
+    55:74:protected void unPackJson(java.lang.String)
+com.hurray.landlord.net.socket.srv.ServerEmotion:
+    private static final long serialVersionUID
+    21:22:public ServerEmotion(com.hurray.landlord.net.socket.SocketStream)
+    41:47:protected void unPackJson(java.lang.String)
+com.hurray.landlord.net.socket.srv.ServerGameResult:
+    private static final long serialVersionUID
+    31:32:public ServerGameResult(com.hurray.landlord.net.socket.SocketStream)
+    65:78:protected void unPackJson(java.lang.String)
+    81:91:private void unMarks(org.json.JSONObject)
+    94:104:private void unTotalMarks(org.json.JSONObject)
+    107:117:private void unHandsCount(org.json.JSONObject)
+    120:135:private void unCardIdsList(org.json.JSONObject)
+com.hurray.landlord.net.socket.srv.ServerHeartBeat
+com.hurray.landlord.net.socket.srv.ServerLastDeclare:
+    private static final long serialVersionUID
+    22:23:public ServerLastDeclare(com.hurray.landlord.net.socket.SocketStream)
+    47:54:protected void unPackJson(java.lang.String)
+com.hurray.landlord.net.socket.srv.ServerLastRob:
+    private static final long serialVersionUID
+    21:22:public ServerLastRob(com.hurray.landlord.net.socket.SocketStream)
+    41:47:protected void unPackJson(java.lang.String)
+com.hurray.landlord.net.socket.srv.ServerMatchResult:
+    private static final long serialVersionUID
+    40:41:public ServerMatchResult(com.hurray.landlord.net.socket.SocketStream)
+    64:64:public int getHeart()
+    74:82:protected void unPackJson(java.lang.String)
+    89:90:public void setRank(int)
+    97:98:public void setRised(int)
+    105:106:public void setResults(com.hurray.lordserver.protocol.message.card.MatchEndPush$PlayersRank[])
+    109:109:public int getmGameType()
+com.hurray.landlord.net.socket.srv.ServerMessageFactory
+com.hurray.landlord.net.socket.srv.ServerMessageType
+com.hurray.landlord.net.socket.srv.ServerPlayerReady:
+    private static final long serialVersionUID
+    20:21:public ServerPlayerReady(com.hurray.landlord.net.socket.SocketStream)
+    30:35:protected void unPackJson(java.lang.String)
+com.hurray.landlord.net.socket.srv.ServerPlayerUpgrade:
+    private static final long serialVersionUID
+    19:20:public ServerPlayerUpgrade(com.hurray.landlord.net.socket.SocketStream)
+    28:28:public int getLevel()
+    34:38:protected void unPackJson(java.lang.String)
+com.hurray.landlord.net.socket.srv.ServerPlsDeclare:
+    private static final long serialVersionUID
+    20:21:public ServerPlsDeclare(com.hurray.landlord.net.socket.SocketStream)
+    40:46:protected void unPackJson(java.lang.String)
+com.hurray.landlord.net.socket.srv.ServerPlsFollow:
+    private static final long serialVersionUID
+    25:26:public ServerPlsFollow(com.hurray.landlord.net.socket.SocketStream)
+    56:74:protected void unPackJson(java.lang.String)
+com.hurray.landlord.net.socket.srv.ServerPlsReady:
+    private static final long serialVersionUID
+    20:21:public ServerPlsReady(com.hurray.landlord.net.socket.SocketStream)
+    35:40:protected void unPackJson(java.lang.String)
+com.hurray.landlord.net.socket.srv.ServerPlsRob:
+    private static final long serialVersionUID
+    22:23:public ServerPlsRob(com.hurray.landlord.net.socket.SocketStream)
+    42:48:protected void unPackJson(java.lang.String)
+com.hurray.landlord.net.socket.srv.ServerPlsShow:
+    private static final long serialVersionUID
+    20:21:public ServerPlsShow(com.hurray.landlord.net.socket.SocketStream)
+    40:46:protected void unPackJson(java.lang.String)
+com.hurray.landlord.net.socket.srv.ServerRisedWait:
+    private static final long serialVersionUID
+    32:43:protected void unPackJson(java.lang.String)
+    46:46:public java.lang.String getAvatar()
+    50:51:public void setAvatar(java.lang.String)
+    58:59:public void setCompInfo(java.lang.String)
+    66:67:public void setTips(java.lang.String)
+    74:75:public void setPrizeInfo(java.lang.String)
+    82:83:public void setRuleInfo(java.lang.String)
+    86:86:public static long getSerialversionuid()
+com.hurray.landlord.net.socket.srv.ServerRobot:
+    private static final long serialVersionUID
+    22:23:public ServerRobot(com.hurray.landlord.net.socket.SocketStream)
+    42:48:protected void unPackJson(java.lang.String)
+com.hurray.landlord.net.socket.srv.ServerRoomInfo:
+    private static final long serialVersionUID
+    28:29:public ServerRoomInfo(com.hurray.landlord.net.socket.SocketStream)
+    41:41:public int getGameType()
+    62:85:protected void unPackJson(java.lang.String)
+com.hurray.landlord.net.socket.srv.ServerRoomInfos:
+    private static final long serialVersionUID
+    24:30:public ServerRoomInfos(int,long,int,long,com.hurray.lordserver.protocol.message.card.RoomInfoPush$PlayerInfo[])
+    40:70:protected void unPackJson(java.lang.String)
+    73:73:public static long getSerialversionuid()
+com.hurray.landlord.net.socket.srv.ServerShowResult:
+    private static final long serialVersionUID
+    23:24:public ServerShowResult(com.hurray.landlord.net.socket.SocketStream)
+    48:65:protected void unPackJson(java.lang.String)
+com.hurray.landlord.net.socket.srv.ServerSyncCards:
+    private static final long serialVersionUID
+    24:25:public ServerSyncCards(com.hurray.landlord.net.socket.SocketStream)
+    49:64:protected void unPackJson(java.lang.String)
+com.hurray.landlord.net.socket.srv.ServerTimeOut
+com.hurray.landlord.net.socket.srv.ServerUpdatePlus:
+    private static final long serialVersionUID
+    23:24:public ServerUpdatePlus(com.hurray.landlord.net.socket.SocketStream)
+    48:55:protected void unPackJson(java.lang.String)
+com.hurray.landlord.net.socket.srv.ServerUpdateRate:
+    private static final long serialVersionUID
+    20:21:public ServerUpdateRate(com.hurray.landlord.net.socket.SocketStream)
+    35:40:protected void unPackJson(java.lang.String)
+com.hurray.landlord.net.socket.srv.ServerWaitRoom
+com.hurray.landlord.receivers.ConnectivityReceiver:
+    private static final java.lang.String TAG
+    57:58:public static void setNextOnGprsConnectedListener(com.hurray.landlord.receivers.ConnectivityReceiver$OnGprsConnectedListener)
+com.hurray.landlord.res.ResUpdateChecker
+com.hurray.landlord.res.ResUpdateChecker$1
+com.hurray.landlord.res.ResUpdateChecker$ManifestHandler
+com.hurray.landlord.res.ResUpdateCheckerListener
+com.hurray.landlord.res.ResUpdater
+com.hurray.landlord.res.ResultCode
+com.hurray.landlord.sdk.SdkManagerJuZi:
+    public static final boolean power
+com.hurray.landlord.server.ServerConstants:
+    public static final java.lang.String HTTP_HOST
+    public static final java.lang.String MSG_URI
+    public static final int CONNECT_TIMEOUT
+    public static final int SO_TIMEOUT
+    public static final long DEFAULT_MSG_FREQUENCY
+    6:6:public ServerConstants()
+com.hurray.landlord.server.stub.IMessageListener$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_onReceive
+    static final int TRANSACTION_onSentResult
+com.hurray.landlord.server.stub.IMessageListener$Stub$Proxy:
+    91:91:public java.lang.String getInterfaceDescriptor()
+com.hurray.landlord.server.stub.IMessageServer$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_sendMessage
+    static final int TRANSACTION_addListener
+    static final int TRANSACTION_removeListener
+    static final int TRANSACTION_setFrequency
+    static final int TRANSACTION_stop
+com.hurray.landlord.server.stub.IMessageServer$Stub$Proxy:
+    109:109:public java.lang.String getInterfaceDescriptor()
+com.hurray.landlord.server.stub.MessageHolder:
+    private int status
+    private int size
+    private org.json.JSONObject jsonObj
+    82:83:public void setType(java.lang.String)
+    95:95:public int getStatus()
+    99:100:public void setStatus(int)
+    103:103:public int getSize()
+    107:110:public org.json.JSONObject getJSONObject()
+com.hurray.landlord.services.AppUpdateService:
+    public static final java.lang.String APP_UPDATE_URL
+    private static final java.lang.String TAG
+    private static final java.lang.String FILE_SUFFIX_APK
+    private static final int MAX_PROGRESS
+    private static final int NFY_ID
+com.hurray.landlord.services.PlayMusicService:
+    public static final java.lang.String RES_ID
+    public static final java.lang.String IS_PLAY
+    private static final java.lang.String TAG
+com.hurray.landlord.settings.Settings:
+    private static final java.lang.String SILENCE
+    8:8:public Settings()
+    19:20:public static boolean isSilence()
+    24:26:public static void setSilence(boolean)
+com.hurray.landlord.sms.SMSReceiver:
+    32:35:private boolean checkSms(java.lang.String,java.lang.String)
+com.hurray.landlord.sms.SmsInfo
+com.hurray.landlord.test.CommonTestActivity:
+    private static final java.lang.String TAG
+com.hurray.landlord.utils.BitmapRef:
+    36:38:public BitmapRef(android.graphics.Bitmap)
+    40:42:public BitmapRef(int)
+    45:47:public void set(android.graphics.Bitmap)
+    70:73:public boolean isEmpty()
+com.hurray.landlord.utils.BitmapUtil:
+    9:9:public BitmapUtil()
+    20:35:public static void unbindDrawables(android.view.View)
+com.hurray.landlord.utils.CardsFilter
+com.hurray.landlord.utils.ImageUtils
+com.hurray.landlord.utils.LogUtil:
+    private static final boolean VDBG
+    private static final boolean DDBG
+    private static final boolean IDBG
+    private static final boolean EDBG
+    private static final boolean WDBG
+    private static final boolean XDBG
+    public static final boolean DEVELOPER_MODE
+    public static final boolean TRACEVIEW_DBG
+    18:18:public LogUtil()
+    46:48:public static void v(java.lang.String,java.lang.String)
+    60:62:public static void v(java.lang.String,java.lang.String,java.lang.Throwable)
+    118:120:public static void i(java.lang.String,java.lang.String,java.lang.Throwable)
+    147:149:public static void w(java.lang.String,java.lang.String,java.lang.Throwable)
+    159:161:public static void w(java.lang.String,java.lang.Throwable)
+    238:239:public static void println(int,java.lang.String,java.lang.String)
+    243:246:public static void x(java.lang.String,java.lang.String)
+    249:285:private static synchronized void out(java.lang.String,java.lang.String)
+com.hurray.landlord.utils.ManifestUtil:
+    9:9:public ManifestUtil()
+    35:48:public static int getAssetsResVersion()
+    52:60:public static int getVersionCode()
+com.hurray.landlord.utils.NetworkUtil:
+    private static final java.lang.String TAG
+    14:14:public NetworkUtil()
+    47:47:public static boolean isWifiEnabled()
+    57:57:public static boolean isLocationEnabled()
+    65:65:public static boolean isGprsConnected()
+    115:126:public static void checkLocationState()
+com.hurray.landlord.utils.PathUtil:
+    6:6:public PathUtil()
+    28:28:public static java.lang.String getResPath()
+    32:32:public static java.lang.String getZipPath()
+    36:36:public static java.lang.String getResAvatarPath()
+    40:49:public static boolean ensurePathExist()
+com.hurray.landlord.utils.ResAvatarUtil:
+    private static final java.lang.String TAG
+    private static final java.lang.String MANIFEST
+    private static final java.lang.String TYPENAME
+    private static final int BUFF_SIZE
+    private static final int FRAME_INTERVAL
+    17:17:public ResAvatarUtil()
+    34:34:public static java.lang.String getAvatarManifest()
+    38:38:public static java.io.File getAvatarManifestFile()
+    46:46:public static android.graphics.drawable.BitmapDrawable getResAvatarBaseDrawable(android.content.res.Resources,boolean)
+    73:73:public static java.io.File getResAvatarClothesFile(boolean,int)
+    91:91:public static java.io.File getResAvatarHairFile(boolean,int)
+    104:115:public static java.util.ArrayList getResAvatarEmotion(boolean,int)
+    125:136:public static java.util.ArrayList getResAvatarEmotionFiles(boolean,int)
+    199:207:public static void inputstreamTofile(java.io.InputStream,java.io.File)
+com.hurray.landlord.utils.SdcardUtil:
+    private static final java.lang.String TAG
+    11:11:public SdcardUtil()
+com.hurray.landlord.utils.SoundSwitch:
+    private static final java.lang.String SOUND_SWITCH
+    private static final java.lang.String MUSIC_SWITCH
+    12:12:public SoundSwitch()
+com.hurray.landlord.utils.SoundUtil:
+    private static final java.lang.String TAG
+    65:86:public void playRepeat(int,int)
+    90:113:public void playSerialized(int[])
+    120:121:public void playButIgnorePlaying(int)
+com.hurray.landlord.utils.SoundUtil$1
+com.hurray.landlord.utils.SoundUtil$2
+com.hurray.landlord.utils.SoundUtil$OnSoundListener:
+    public static final int ERR_FROM_MEDIA_PLAYER
+    public static final int ERR_BAD_RES_ID
+    public static final int ERR_MUTE
+    public static final int ERR_WONT_STOP_CURR_PLAYING
+    public static final int ERR_CREATE_PLAYER_FAIL
+    public static final int ERR_INIT_PLAYER_FAIL
+    public static final int ERR_NOT_RINGER_MODE_NORMAL
+com.hurray.landlord.utils.StrictDebug:
+    private static final java.lang.String TAG
+    10:10:public StrictDebug()
+com.hurray.landlord.utils.StringUtil:
+    12:12:public StringUtil()
+com.hurray.landlord.utils.StringsAppendUtil
+com.hurray.landlord.utils.ToastUtil:
+    private static final java.lang.String TAG
+    private static final java.lang.String DURATION
+    private static final java.lang.String TEXT
+    private static final int MSG_TOAST
+    private static final int MSG_TOAST_TOP
+    11:11:public ToastUtil()
+    83:85:public static varargs void show(int,java.lang.Object[])
+com.hurray.landlord.utils.ZipUtil
+com.hurray.landlord.view.DashedLine:
+    private float startX
+    private float startY
+    private float endX
+    private float endY
+    private android.graphics.Rect mRect
+com.hurray.landlord.view.EmotionAction
+com.hurray.landlord.view.LocalAvatar:
+    private static final int SHOW_FACE_DELAY
+    private static final int ONSTART_DELAY
+    private static final int RES_IDX_NO_FACE
+    private static final int RES_IDX_DEFAULT
+    private static final int RES_IDX_ANGER
+    private static final int RES_IDX_CRY
+    private static final int RES_IDX_CUTE
+    private static final int RES_IDX_LAUGH
+    private static final int RES_IDX_LUCK
+    private static final int RES_IDX_PROUD
+com.hurray.landlord.view.LocalGameBgView:
+    private static final java.lang.String TAG
+com.hurray.landlord.view.OnlineAvatar:
+    private static final java.lang.String TAG
+    private static final int START_EMOTION_DELAY
+    private static final int SHOW_EMOTION_DELAY
+    private static final int LAYER_IDX_BASE
+    private static final int LAYER_IDX_CLOTHES
+    private static final int LAYER_IDX_HAND
+    private static final int LAYER_NUM
+com.hurray.landlord.view.OnlineGameBgView:
+    private static final java.lang.String TAG
+com.hurray.landlord.view.SelfCardsView:
+    private static final java.lang.String TAG
+com.hurray.landlord.view.ShowCardsView:
+    private static final java.lang.String TAG
+com.hurray.landlord.view.StartMenuView:
+    private static final java.lang.String TAG
+    public static final int MENU_ABOUT
+    public static final int MENU_EXIT
+    public static final int MENU_LOCAL
+    public static final int MENU_NET
+    public static final int MENU_HELP
+    public static final int MENU_NUM
+    private static final int POS_NUM
+    private static final int FRAME_NUM
+    private static final int FRAME_INTERVAL
+    private static final int FLING_VELOCITY_UNIT
+    89:90:public void setMenuIndex(int)
+com.hurray.landlord.view.StartMenuView$DrawThread:
+    private static final boolean MENU_ODD
+    private static final int MENU_HALF_SIZE
+com.hurray.landlord.view.StartMenuView$DrawThread$PosInfo:
+    public static final int ALPHA
+    private static final int MASK_COLOR
+com.hurray.landlord.view.TextProgressBar:
+    60:60:public java.lang.String getText()
+    73:73:public int getTextColor()
+    82:82:public float getTextSize()
+com.hurray.landlord.view.TurnTableView:
+    private static final java.lang.String TAG
+    private static final int ANGULAR_VELOCITY
+    private static final int FAN_NUM
+    private static final int FAN_DEGREE
+    private static final int FONT_SIZE_SP
+    private static final float BALL_FAN_DEGREE
+    private static final int RET_SUCCESS
+    private static final int RET_RUNNING
+    private java.util.ArrayList mOfflineIconInfos
+    private java.util.ArrayList mTurntableAwardList
+    private android.os.Handler mHandler
+    271:283:public void startThread()
+    404:409:private void notifyRotateDone(int)
+    495:531:private void drawOfflineIcons(android.graphics.Canvas)
+    640:653:public void setAwardList()
+    680:695:public void setAwardList(java.util.ArrayList)
+    796:810:private int getResIdByAwardId(int)
+com.hurray.landlord.view.TurnTableView$DrawThread:
+    881:891:public void startThread(com.hurray.landlord.view.TurnTableView$OnTurntableListener,int)
+com.juzi.main.AdView:
+    public AdView(android.content.Context)
+com.juzi.main.AppConnect:
+    public boolean wallsound
+    public static com.juzi.main.AppConnect getInstance(android.content.Context,java.lang.String)
+    public static void setAppid(java.lang.String,java.lang.String)
+    public void setMethodRewrite(com.juzi.main.MethodRewrite)
+    public void setPlayAbTime(int)
+    public static void adDestroyed()
+    public static void adStop()
+    public static void adResume()
+    public void showGoodsWall(android.app.Activity)
+    public void showGoodsWall(android.app.Activity,java.lang.String)
+    public void showMore(android.content.Context)
+    public void showFeedback()
+    public java.lang.String getDataSMS()
+    public java.lang.String getData(java.lang.String)
+    public void showAlipay(java.lang.String)
+    public void Login(android.content.Context)
+    public void showAdFull(android.content.Context)
+    public java.lang.String getPoints(android.content.Context)
+    public java.lang.String spendPoints(int,android.content.Context)
+    public java.lang.String action(java.lang.String)
+    public void wallSound(boolean)
+    public void playNotificationAd(android.content.Context)
+    public void playNotificationAd(android.content.Context,int,boolean)
+com.juzi.main.Base64:
+    Base64()
+com.juzi.main.C:
+    C()
+com.juzi.main.E:
+    protected static void a(android.content.Context,java.lang.String)
+    protected static void b(android.content.Context)
+    protected static void c(android.content.Context)
+    protected static void d(android.content.Context)
+    protected static void e(android.content.Context)
+    private static org.json.JSONObject b(java.lang.String)
+com.juzi.main.IMyAD:
+    public abstract java.lang.String sendRequest(java.lang.String)
+com.juzi.main.JuZiUrl:
+    public void pageReload()
+    public boolean getPackagename(java.lang.String)
+    public java.lang.String getPackageTime(java.lang.String)
+    public java.lang.String getPackageVersion(java.lang.String)
+    public void oPenApplication(java.lang.String)
+    public void cleanJuZiAD()
+    public void cleanJuZiDown()
+    public void cleanJuZiJuZiGoods()
+    public java.lang.String getStrOpt()
+    public java.lang.String getSDK()
+    public java.lang.String getRelease()
+    public java.lang.String getBrand()
+    public java.lang.String getModel()
+    public java.lang.String getFlowNumber()
+    public void cleanRms()
+    public void cleanWebCache()
+    public void closeWebview()
+com.juzi.main.L:
+    L()
+    protected static java.lang.String a(android.content.Context)
+    protected static java.lang.String a(android.content.Context,int,java.lang.String)
+    protected static java.lang.String a(java.lang.String)
+    protected static java.lang.String b()
+    protected static java.lang.String c(java.lang.String)
+    static synthetic java.lang.String c()
+com.juzi.main.M
+com.juzi.main.MethodRewrite:
+    public MethodRewrite()
+    public void setShowMore(android.content.Context)
+    public void setShowFeedback(android.content.Context)
+    public void setLogin(android.content.Context)
+    public void setShowAdFull(android.content.Context)
+com.juzi.main.N
+com.juzi.main.O
+com.juzi.main.P:
+    public final java.lang.String sendRequest(java.lang.String)
+com.juzi.main.Q
+com.juzi.main.T
+com.juzi.main.V
+com.juzi.main.WebLayout:
+    public WebLayout(android.content.Context)
+    public WebLayout(android.content.Context,java.lang.String)
+    public WebLayout(android.content.Context,java.lang.String,java.lang.String)
+com.juzi.main.i
+com.juzi.main.j
+com.juzi.main.p:
+    p()
+com.juzi.main.q:
+    q()

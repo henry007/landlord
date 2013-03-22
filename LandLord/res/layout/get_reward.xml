@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="420dp"
+    android:layout_height="230dp"
+    android:background="@drawable/shape_bg" >
+    
+	<ImageView android:layout_width="140dp"
+		android:layout_height="210dp"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true"
+		android:layout_marginRight="4dp"
+		android:layout_marginBottom="2dp"
+		android:background="@drawable/get_reward_girl"/>
+		
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="175dp"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/jiang_01" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="80dp"
+        android:text="主人，今天是你第一天登录，赠送你300金币！\n连续登录有更多好礼噢"
+        android:textColor="@android:color/white" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textView1"
+         >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/kuang" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView1"
+            android:background="@drawable/arrowss" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView2"
+            android:background="@drawable/kuang" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView3"
+            android:background="@drawable/arrowss" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView4"
+            android:background="@drawable/kuang" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="@drawable/net_btn"
+        android:gravity="center"
+        android:text="领奖进入游戏"
+        android:textSize="12sp"
+        android:textColor="@android:color/white" 
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        
+        />
+
+</RelativeLayout>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Package Utility Author: Henry Date: 20120726 -->
+
+<project name="landlord" default="release">
+
+	<!-- <property environment="env"/> -->
+	<property file="build.properties" />
+	<property name="final-apk-name" value="${APK_NAME}" />
+	<property name="project-basedir" value="${PROJECT_DIR}" />
+	<!-- <property name="woa-jar" value="${env.WOA_JAR_NAME}" /> -->
+
+	<!-- jars's name -->
+	<property name="Analytics_Android_SDK" value="Analytics_Android_SDK_3.3.jar" />
+	<property name="commons-io" value="commons-io.jar" />
+	<property name="commons-lang" value="commons-lang.jar" />
+	<property name="protocol" value="protocol.jar" />
+	<property name="jdk-home" value="${JAVA_HOME}" />
+	<property name="android-sdk-folder" value="${MY_ANDROID_SDK_HOME}" />
+	<property name="android-platform-folder" value="${MY_ANDROID_PLATFORM}" />
+	<property name="sdk-tools" value="${android-platform-folder}/tools" />
+	<property name="android-tools" value="${android-sdk-folder}/tools" />
+	<property name="platform-tools" value="${android-sdk-folder}/platform-tools" />
+	<property name="external-libs" value="libs" />
+
+	<!-- android framwork -->
+	<property name="android-framework" value="E:\Program\Eclipse\SDK\android-sdk-windows\platforms\android-10\framework.aidl" />
+	<!-- Tools -->
+	<property name="aapt" value="${platform-tools}/aapt.exe" />
+	<property name="dx" value="${platform-tools}/dx.bat" />
+	<property name="apk-builder" value="${android-tools}/apkbuilder.bat" />
+	<property name="aidl" value="${platform-tools}/aidl.exe" />
+	<property name="adb" value="${platform-tools}/adb.exe" />
+	<property name="android-jar" value="${android-platform-folder}/android.jar" />
+	<property name="jarsigner" value="${jdk-home}\bin\jarsigner.exe" />
+	<property name="zipalign" value="${android-tools}/zipalign.exe" />
+
+	<!-- The intermediates directory -->
+	<property name="outdir-bin" value="outdir_temp" />
+
+	<!-- source directories -->
+	<property name="R-gen" value="gen" />
+	<property name="resource-dir" value="res" />
+	<property name="asset-dir" value="assets" />
+	<property name="srcdir" value="src" />
+	<property name="srcdir-ospath" value="${project-basedir}/${srcdir}" />
+
+	<!-- dest directories -->
+	<property name="des-resource-dir" value="${outdir-bin}/res" />
+	<property name="des-asset-dir" value="${outdir-bin}/assets" />
+	<property name="des-srcdir" value="${outdir-bin}/src" />
+	<property name="des-srcdir-ospath" value="${project-basedir}/${outdir-bin}/${srcdir}" />
+
+	<!-- Output directories -->
+	<property name="outdir-obfuscate-classes-ospath" value="${project-basedir}/${outdir-bin}" />
+
+	<!-- Intermediate files -->
+	<property name="dex-file" value="classes.dex" />
+	<property name="intermediate-dex" value="${outdir-bin}/${dex-file}" />
+	<property name="intermediate-dex-ospath" value="${project-basedir}/${intermediate-dex}" />
+
+	<!-- The final package file to generate -->
+	<property name="resources-package" value="${outdir-bin}/${ant.project.name}" />
+	<property name="resources-package-ospath" value="${project-basedir}/${resources-package}" />
+	<property name="out-debug-package" value="${outdir-bin}/${ant.project.name}-debug.apk" />
+	<property name="out-debug-package-ospath" value="${project-basedir}/${out-debug-package}" />
+	<property name="out-unsigned-package" value="${outdir-bin}/${ant.project.name}-unsigned.apk" />
+	<property name="out-unsigned-package-ospath" value="${project-basedir}/${out-unsigned-package}" />
+	<property name="out-signed-package" value="${outdir-bin}\${ant.project.name}-signed.apk" />
+	<property name="out-signed-package-ospath" value="${project-basedir}\${out-signed-package}" />
+	<property name="zipalign-package-ospath" value="${project-basedir}\landlord.apk" />
+
+	<property name="native-libs-ospath" value="${project-basedir}/libs" />
+
+	<!-- init -->
+	<target name="init">
+		<echo>
+	            Creating all output directories
+	        </echo>
+		<delete dir="${outdir-bin}" />
+		<mkdir dir="${outdir-bin}" />
+		<!-- <delete dir="${outdir-gen}" /> <mkdir dir="${outdir-gen}" /> -->
+	</target>
+
+	<!-- Generate the R.java file for this project's resources. -->
+	<target name="resource-src" depends="init">
+		<delete dir="${R-gen}" />
+		<mkdir dir="${R-gen}" />
+		<echo>
+	            Generating R.java / Manifest.java from the resources...
+	        </echo>
+		<exec executable="${aapt}" failonerror="true">
+			<arg value="package" />
+			<arg value="-f" />
+			<arg value="-m" />
+			<arg value="-J" />
+			<arg value="${R-gen}" />
+			<arg value="-M" />
+			<arg value="AndroidManifest.xml" />
+			<arg value="-S" />
+			<arg value="${resource-dir}" />
+			<arg value="-I" />
+			<arg value="${android-jar}" />
+		</exec>
+		<echo>
+	            Generating R.java success ${android-jar}
+	        </echo>
+	</target>
+
+	<!-- Generate java classes from .aidl files. -->
+	<target name="aidl" depends="resource-src">
+		<echo>
+	            Compiling aidl files into Java classes...
+	        </echo>
+		<apply executable="${aidl}" failonerror="true">
+			<arg value="-p${android-framework}" />
+			<arg value="-I${srcdir}" />
+			<fileset dir="${srcdir}">
+				<include name="**/*.aidl" />
+			</fileset>
+		</apply>
+	</target>
+
+	<!-- Generate java classes from .aidl files. -->
+	<target name="aidltest">
+		<echo>
+	                Compiling aidl files into Java classes...
+	            </echo>
+		<apply executable="${aidl}" failonerror="true">
+			<arg value="-p${android-framework}" />
+			<arg value="-I${srcdir}" />
+			<fileset dir="${srcdir}" includes="**/*.aidl" />
+			<!-- 
+			<arg value="E:\Program\Eclipse\WorkPlace\LandLord_task3\src\com\hurray\landlord\server\stub\IMessageListener.aidl" />
+			
+			<fileset dir="${srcdir}" includes="IMessageListener.aidl" />
+			
+			<fileset dir="${srcdir}" includes="IMessageServer.aidl" />
+			-->
+
+			<fileset dir="${srcdir}">
+				<include name="**/*.aidl" />
+			</fileset>
+			<!-- 
+	            -->
+		</apply>
+	</target>
+
+	<!-- Compile this project's .java files into .class files. -->
+	<path id="libs">
+		<fileset dir="${project-basedir}/libs">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	<target name="compile" depends="aidl">
+		<javac bootclasspath="${android-jar}" debug="true" destdir="outdir_temp" encoding="UTF-8" extdirs="" srcdir="src;gen" target="1.5">
+			<compilerarg value="-Xlint:unchecked" />
+			<classpath refid="libs">
+			</classpath>
+
+			<!-- 
+			<classpath>
+				<fileset dir="${external-libs}" includes="*.jar" />
+			</classpath>
+			-->
+			<!-- <classpath> <fileset dir="${R-gen}" includes="**/*.java"/> 
+	                </classpath> -->
+		</javac>
+	</target>
+
+	<target name="unzip" depends="compile">
+		<unzip src="${project-basedir}/libs/${Analytics_Android_SDK}" dest="${outdir-bin}" />
+		<unzip src="${project-basedir}/libs/${commons-io}" dest="${outdir-bin}" />
+		<unzip src="${project-basedir}/libs/${commons-lang}" dest="${outdir-bin}" />
+		<unzip src="${project-basedir}/libs/${protocol}" dest="${outdir-bin}" />
+		<delete file="${outdir-bin}/META-INF" />
+	</target>
+
+	<!-- Convert this project's .class files into .dex files. -->
+	<target name="dex" depends="unzip">
+		<echo>
+	            Converting compiled files and external libraries into ...
+	        </echo>
+		<echo>
+	            --output=${intermediate-dex-ospath}
+	        </echo>
+		<echo>
+	            ${outdir-obfuscate-classes-ospath}
+	        </echo>
+		<apply executable="${dx}" failonerror="true" parallel="true">
+			<arg value="--dex" />
+			<arg value="--output=${intermediate-dex-ospath}" />
+			<arg path="${outdir-obfuscate-classes-ospath}" />
+			<fileset dir="${srcdir}" includes="*.jar" />
+			<fileset dir="${external-libs}" includes="${project-basedir}/libs/${Analytics_Android_SDK}" />
+			<fileset dir="${external-libs}" includes="${project-basedir}/libs/${commons-io}" />
+			<fileset dir="${external-libs}" includes="${project-basedir}/libs/${commons-lang}" />
+			<fileset dir="${external-libs}" includes="${project-basedir}/libs/${protocol}" />
+		</apply>
+	</target>
+
+	<!-- Put the project's resources into the output package file. -->
+	<target name="package-res-and-assets">
+		<echo>
+	            Packaging resources and assets...
+	        </echo>
+		<exec executable="${aapt}" failonerror="true">
+			<arg value="package" />
+			<arg value="-f" />
+			<arg value="-M" />
+			<arg value="AndroidManifest.xml" />
+			<arg value="-S" />
+			<arg value="${resource-dir}" />
+			<arg value="-A" />
+			<arg value="${asset-dir}" />
+			<arg value="-I" />
+			<arg value="${android-jar}" />
+			<arg value="-F" />
+			<arg value="${resources-package}" />
+		</exec>
+	</target>
+
+	<!-- Package the application without signing it. -->
+	<target name="package" depends="dex, package-res-and-assets">
+		<echo>
+	            Packaging ${out-unsigned-package} for release...
+	        </echo>
+		<exec executable="${apk-builder}" failonerror="true">
+			<arg value="${out-unsigned-package-ospath}" />
+			<arg value="-u" />
+			<arg value="-z" />
+			<arg value="${resources-package-ospath}" />
+			<arg value="-f" />
+			<arg value="${intermediate-dex-ospath}" />
+			<arg value="-rf" />
+			<arg value="${srcdir-ospath}" />
+			<arg value="-rj" />
+			<arg value="${native-libs-ospath}" />
+			<!-- <arg value="-rj" /> <arg value="${external-libs-ospath}" 
+	                /> -->
+		</exec>
+	</target>
+
+	<target name="addfiles">
+		<echo>
+	            addfiles...
+	        </echo>
+		<exec executable="${aapt}" failonerror="true">
+			<arg value="add" />
+			<arg value="-v" />
+			<arg value="${out-unsigned-package-ospath}" />
+		</exec>
+	</target>
+
+
+	<target name="jarsigner" depends="package">
+		<echo>
+	            sign ${out-unsigned-package} for release...
+	        </echo>
+		<exec executable="${jarsigner}" failonerror="true">
+			<arg value="-verbose" />
+			<arg value="-keystore" />
+			<arg value="${project-basedir}/release.keystore" />
+			<arg value="-storepass" />
+			<arg value="huayou123" />
+			<arg value="-keypass" />
+			<arg value="huayou123" />
+			<arg value="-signedjar" />
+			<arg value="${out-signed-package-ospath}" />
+			<arg value="${out-unsigned-package-ospath}" />
+			<arg value="hurray" />
+		</exec>
+	</target>
+
+	<target name="zipalign" depends="jarsigner">
+		<echo>
+	            ${zipalign} ${out-signed-package-ospath}
+	            ${zipalign-package-ospath}
+	        </echo>
+		<exec executable="${zipalign}" failonerror="true">
+			<arg value="-f" />
+			<arg value="-v" />
+			<arg value="4" />
+			<arg value="${out-signed-package-ospath}" />
+			<arg value="${zipalign-package-ospath}" />
+		</exec>
+		<delete dir="${outdir-bin}" />
+	</target>
+
+	<target name="release" depends="zipalign">
+		<echo>
+	            OK for release...
+	        </echo>
+	</target>
+
+</project>

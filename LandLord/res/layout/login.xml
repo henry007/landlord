@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="180dp"
+    android:background="@drawable/shape_bg">
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center" >
+        <TableLayout
+            android:id="@+id/loginInfo_change"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:stretchColumns="1" >
+            <TableRow>
+                <TextView
+                    android:gravity="right"
+                    android:padding="5dip"
+                    android:text="@string/account"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/edt_account"
+                    android:background="@android:drawable/editbox_background_normal"
+                    android:hint="请输入帐号"
+                    android:scrollHorizontally="true" >
+                    <requestFocus />
+                </EditText>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:gravity="right"
+                    android:padding="5dip"
+                    android:text="@string/psd"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/edt_password"
+                    android:background="@android:drawable/editbox_background_normal"
+                    android:hint="请输入密码"
+                    android:password="true"
+                    android:scrollHorizontally="true" />
+            </TableRow>
+        </TableLayout>
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/loginInfo_change"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/net_btn"
+            android:text="@string/commit"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/x_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/shape_back" />
+</RelativeLayout>

@@ -1,0 +1,272 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+div.main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:800px;
+    height:480px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:800px;
+    height:480px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:232px;
+    width:796px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u0 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:800px;
+    height:480px
+}
+
+.u2 {
+    position:absolute;
+    left:660px;
+    top:370px;
+    width:120px;
+    height:110px
+}
+
+.u3 {
+    position:absolute;
+    left:70px;
+    top:60px;
+    width:130px;
+    height:40px
+}
+
+.u4 {
+    position:absolute;
+    left:60px;
+    top:110px;
+    width:130px;
+    height:40px
+}
+
+.u5 {
+    position:absolute;
+    left:61px;
+    top:161px;
+    width:130px;
+    height:40px
+}
+
+.u6 {
+    position:absolute;
+    left:60px;
+    top:210px;
+    width:130px;
+    height:40px
+}
+
+.u7 {
+    position:absolute;
+    left:63px;
+    top:259px;
+    width:130px;
+    height:40px
+}
+
+.u8 {
+    position:absolute;
+    left:60px;
+    top:302px;
+    width:130px;
+    height:40px
+}
+
+.u9 {
+    position:absolute;
+    left:60px;
+    top:350px;
+    width:130px;
+    height:40px
+}
+
+.u10 {
+    position:absolute;
+    left:60px;
+    top:400px;
+    width:130px;
+    height:40px
+}
+
+.u11_original {
+    background-image: url('../更换玩家_files/u11_original.png');
+}
+
+.u11_container {
+    position:absolute;
+    left:290px;
+    top:160px;
+    width:290px;
+    height:150px;
+}
+
+#u11_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:296px;
+    height:156px;
+}
+
+.u12 {
+    position:absolute;
+    left:2px;
+    top:52px;
+    width:286px;
+    height:45px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u11 {
+    position:absolute;
+    left:290px;
+    top:160px;
+    width:290px;
+    height:150px
+}
+
+.u13 {
+    position:absolute;
+    left:350px;
+    top:205px;
+    width:180px;
+    height:25px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'宋体';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u14 {
+    position:absolute;
+    left:350px;
+    top:240px;
+    width:180px;
+    height:25px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'宋体';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u15 {
+    position:absolute;
+    left:360px;
+    top:275px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'宋体';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u16_original {
+    background-image: url('../更换玩家_files/u16_original.png');
+}
+
+.u16_container {
+    position:absolute;
+    left:360px;
+    top:170px;
+    width:160px;
+    height:20px;
+}
+
+#u16_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:166px;
+    height:26px;
+}
+
+.u17 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:156px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16 {
+    position:absolute;
+    left:360px;
+    top:170px;
+    width:160px;
+    height:20px
+}
+

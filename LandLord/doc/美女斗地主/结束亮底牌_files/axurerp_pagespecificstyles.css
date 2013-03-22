@@ -1,0 +1,168 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+div.main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:800px;
+    height:480px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:800px;
+    height:480px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:232px;
+    width:796px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u0 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:800px;
+    height:480px
+}
+
+.u2_original {
+    background-image: url('../结束亮底牌_files/u2_original.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:320px;
+    top:70px;
+    width:160px;
+    height:30px;
+}
+
+#u2_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:166px;
+    height:36px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:156px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2 {
+    position:absolute;
+    left:320px;
+    top:70px;
+    width:160px;
+    height:30px
+}
+
+.u4 {
+    position:absolute;
+    left:280px;
+    top:140px;
+    width:200px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u5_original {
+    background-image: url('../结束亮底牌_files/u5_original.png');
+}
+
+.u5_container {
+    position:absolute;
+    left:290px;
+    top:140px;
+    width:180px;
+    height:80px;
+}
+
+#u5_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:86px;
+}
+
+.u6 {
+    position:absolute;
+    left:2px;
+    top:18px;
+    width:176px;
+    height:45px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u5 {
+    position:absolute;
+    left:290px;
+    top:140px;
+    width:180px;
+    height:80px
+}
+
+.u7 {
+    position:absolute;
+    left:588px;
+    top:9px;
+    width:50px;
+    height:50px
+}
+
